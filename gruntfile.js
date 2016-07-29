@@ -7,29 +7,27 @@ module.exports = function(grunt) {
 		// create link to package.json items
     	pkg: grunt.file.readJSON('package.json'),
 		
-
     	compass: {                  	// Task
-    		dist: {                   	// Target
+    		dev: {                   	// Target
 				options: {              // Target options
 			    	sassDir: 'components/sass',
 			    	cssDir: 'builds/development/css',
 			    	environment: 'development'
       			}
     		}, // close dist
-    		dev: {                    // Another target
+    		prod: {                    // Another target
       			options: {
         			sassDir: 'components/sass',
-        			cssDir: 'builds/production'
+        			cssDir: 'builds/production/css'
       			}
     		} // close dev
-    	}
+    	} // close compass
 
 	}); //initConfig
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	// grunt.loadNpmTasks('grunt-contrib-sass');
 	
-
 	grunt.registerTask('default', ['compass']);
 	
 }; // wrapper function
