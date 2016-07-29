@@ -21,13 +21,26 @@ module.exports = function(grunt) {
         			cssDir: 'builds/production/css'
       			}
     		} // close dev
-    	} // close compass
+    	}, // close compass
+
+    	postcss: {
+			options: {
+    			processors: [
+      				require('pixrem')(), // disable if this gives issues with font mixins
+      				require('autoprefixer')({ browsers: ['last 2 versions'] }),
+      				require('cssnano')() // minify the result
+    			]
+  			},
+  			dist: {
+  				src:'builds/production/css/*.css'
+  			}  // postcss options		    
+    	}	// postcss
 
 	}); //initConfig
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
-	// grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-postcss');
 	
-	grunt.registerTask('default', ['compass']);
+	grunt.registerTask('default', ['compass', 'postcss']);
 	
 }; // wrapper function
