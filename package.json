@@ -1,0 +1,16 @@
+{
+  "name": "uok-core",
+  "version": "0.0.1",
+  "description": "This repo holds the core CSS and JS for the Keele website (https://www.keele.ac.uk)",
+  "main": "gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bearduk/uok-core.git"
+  },
+  "author": "Chris Beard <c.d.beard@keele.ac.uk>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bearduk/uok-core/issues"
+  },
+  "homepage": "https://github.com/bearduk/uok-core#readme"
+}
