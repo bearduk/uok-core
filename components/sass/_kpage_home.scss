@@ -1,0 +1,62 @@
+// .stagedev { commeting out for golive
+
+	.crss {
+		padding: 30px 50px 30px 50px;
+		// background-color: #272449;
+		// Attempting a Steel Blue! (2 june 2016)
+		background-color: #4b6375;
+    	// overflow: scroll;
+    	overflow: auto; /* scroll shows bars on windows */
+    	color: white;
+	}
+	.primaryhp {
+		float:left;
+		width: 59%;
+			h1 a {
+				color: white;
+			}
+	}
+	.secondaryhp {
+	    float:left;
+	    width:39%;
+	}
+	#kpagesearch input {
+		width: 390px;
+	}
+	#kpagesearch input {
+		width: 390px;
+		margin:25px 0px 10px 0px;
+	}
+	.secondaryhp ul {
+	    // margin:10px 0px 0px 0px;
+	    margin: 0px 0px 0px 0px;
+	}
+
+.HP_course_pan_list li {
+/* 	list-style: initial; */
+    background: url("/media/keeleuniversity/styleassets/images/bulletDotsGreen.gif") no-repeat scroll 0px 10px transparent;
+padding-left: 15px;
+}
+
+	.secondaryhp ul li a:hover {
+    	color:#2bb675;
+	}
+
+
+// mobile sections
+
+	.mob-news h1, .mob-res h1 {
+		font-size: 35px;
+		line-height: 42px;
+		font-size: 3.5rem;
+		line-height: 4.2rem;
+		/* text-align set in kresp.css */
+		color:#272449;
+		padding-bottom: 20px;
+	}
+
+	.mobmainbanner {
+    display:none;
+	}
+
+// } commeting out for golive // stagedev end

@@ -1,0 +1,245 @@
+// CB FORMS
+
+#midCol #search {
+  margin: 0px;
+  padding: 0;
+  width: initial;
+  float: initial;
+}
+#midCol label {
+    font-size:12px;
+    line-height:24px;
+    font-weight:bold;
+}
+#midCol input {
+    margin-bottom:5px;
+    line-height:18px;
+    padding:2px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #CCC;
+    font-size: 12px;
+}
+#midCol input[type="radio"] {
+    margin-left:3px;
+    margin-right:5px;
+ }
+
+#midCol img {
+  border-radius:2px;
+} // beware that this may have knock on effects and so perhaps remove if it proves an issue. Added July 2015 to soften edges of all images
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//  Main top right search overrides. Note that Funnelback control a lot of these.
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+#search #query {
+    font-size:12px;
+}
+
+// /* style broken images */
+// img {  
+// /*   font-family: 'Helvetica'; */
+//   font-weight: 300;
+//   line-height: 2;  
+//   text-align: center;
+// /*   width: 100%; */
+//   height: auto;
+//   display: block;
+//   position: relative;
+// }
+// img:after {  
+//   content: "\f127" " Broken Image of " attr(alt);
+//   font-size: 16px;
+//   font-family: FontAwesome;
+//   color: rgb(100, 100, 100);
+//   display: block;
+//   position: absolute;
+//   z-index: 2;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #fff;
+// }
+// // end broken images
+
+
+// /* =Forms ORIGINAL FROM HEADSCAPE
+// *******************************************************************************************************************/
+// #midCol form {
+//   margin: 0;
+//   padding: 0; }
+
+// #midCol form legend {
+//   margin-bottom: 1em;
+//   font-weight: bold;
+//   line-height: 1.3em;
+//   font-size: 1.3em;
+//   color: #000000; }
+
+// #midCol form fieldset {
+//   border: none;
+//   display: inline;
+//   margin: 0; }
+
+// #midCol form fieldset legend {
+//   display: none; }
+
+// #midCol form input.fText, form input.sField, #midCol form input.fEmail, form textarea, #midCol form select, form .filtGo {
+//   float: left;
+//   /*width: 350px;*/
+//   margin: 5px 5px 5px 0;
+//  // padding: 5px;
+//   border: 1px solid #efefef;
+//   /*background: #DCEFD1;*/ }
+
+// #midCol form #radio, #midCol form #radioFirst {
+//   display: inline;
+//   font-size: 2em;
+//   padding: 0 9px 0 0;
+//   margin-right: 3px;
+//   margin-left: 20px;
+//   vertical-align: middle; }
+
+// #midCol form #radioFirst {
+//   margin-left: 0px; }
+
+// #midCol form label {
+//   font-size: 12px;
+//   display: block;
+//   width: 120px;
+//   padding-right: 5px;
+//   color: #447F1F;
+//   font-weight: bold; }
+
+// #midCol form .row {
+//   clear: left;
+//   float: left;
+//   width: 100%;
+//   margin-bottom: 0.3em; }
+
+// #midCol form .row.last {
+//   display: block;
+//   text-align: left;
+//   padding: 1.5em 0 0 0; }
+
+// #midCol form .row .small {
+//   font-size: 0.9em; }
+
+// #midCol form .sButtonContainer {
+//   cursor: pointer;
+//   float: left;
+//   color: #ccc;
+//   height: 25px;
+//   background: #000; }
+
+// #midCol form .sButtonContainer .sButton {
+//   height: 25px;
+//   cursor: pointer;
+//   width: auto !important;
+//   vertical-align: top;
+//   margin-right: 9px;
+//   padding: 0 0 4px 9px;
+//   border: none;
+//   color: #ccc;
+//   font-size: 12px;
+//   background: url(/media/keeleuniversity/styleassets/images/submit_button_left.gif) no-repeat; }
+
+// #midCol form .error input.fText, #midCol form .error input.fEmail, #midCol form .error textarea, #midCol form .error select {
+//   color: #000;
+//   font-family: Verdana, Arial, Helvetica, sans-serif;
+//   font-size: 1.2em;
+//   font-weight: normal;
+//   background-color: #DCEFD1; }
+
+// #midCol .formMessage {
+//   margin-bottom: 1.5em;
+//   padding-top: 6px; }
+
+// #midCol .formMessage h2 {
+//   border-bottom: none;
+//   font-size: 1.3em;
+//   margin: 0;
+//   padding: 0.3em 0.8em 0.8em 0.8em; }
+
+// #midCol .formMessage.error h2 {
+//   font-size: 1.4em;
+//   font-family: Verdana, Arial, Helvetica, sans-serif;
+//   background: #8DB2DF; }
+
+// #midCol .formMessage.success h2 {
+//   font-size: 1.4em;
+//   font-family: Verdana, Arial, Helvetica, sans-serif;
+//   background: #5A8E39; }
+
+// #midCol .formMessage h2 {
+//   color: #ffffff; }
+
+// #midCol .formMessage p {
+//   margin: 0;
+//   padding: 0.8em 0.8em 0.3em 0.8em; }
+
+// #midCol .formMessage.error p {
+//   color: #000000;
+//   background-color: #99BCE8; }
+
+// #midCol .formMessage.success p {
+//   color: #ffffff;
+//   background-color: #8FBF6B; }
+
+// #midCol form .row.error {
+//   background: none; }
+
+// #midCol form .row.error label {
+//   background: url(/media/keeleuniversity/styleassets/images/formerror_icon.png) no-repeat left top;
+//   color: #ff0000;
+//   font-size: 11px;
+//   font-weight: bold;
+//   padding-left: 18px; }
+
+// #midCol .formErrorIcon {
+//   vertical-align: middle; }
+
+// #findCourseGo input {
+//   cursor: pointer;
+//   display: block;
+//   background: #333;
+//   color: #fff;
+//   font-size: 9px;
+//   height: 24px;
+//   padding: 0px 5px 3px 5px;
+//   border-top: 1px solid #ddd;
+//   border-left: 1px solid #ddd;
+//   border-bottom: 1px solid #000;
+//   border-right: 1px solid #000; }
+
+// #findCourseGo input:hover {
+//   display: block;
+//   background: #666; }
+
+// #midCol .generatedformtitle {
+//   font-size: 1.5em;
+//   font-weight: bold; }
+
+// #midCol form td {
+//   vertical-align: top;
+//   font-size: 1.1em; }
+
+
+
+// form input {
+//   /* border: none; REMOVED 14th JAN FOR HEALTH FORM */
+//   /*height: 1.4em; */
+//   background: #fff;
+//   -webkit-border-radius: 4px;
+//   -moz-border-radius: 4px;
+//   border-radius: 4px;
+//   margin: 2px;
+// }
+/* new for course finder twitter version. Didn't work so commenting out. 24th Sept 2013
+border:1px solid #cccccc;
+padding:4px;
+font-size: 12px;
+*/

@@ -1,0 +1,548 @@
+.mobTog {
+    display: none;
+}
+/** end mobTog **/
+
+
+// RESPONSIVE VIDEOS
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+// Twitter centered 
+.tww {
+    text-align:center;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bob {
+margin-bottom:15px;
+// fix floats. Trialling this so vidoes show correctly after feature boxes
+clear:both;
+}
+//  END RESPONSIVE VIDEOS
+
+
+// ADDITIONS FOR NEW COURSE TEMPLATE 2016
+.crs_ovw_img {
+    float:right;
+    margin-left:10px;
+    margin-bottom:10px;
+    max-width:200px;
+}
+
+
+.crs_ovw_img p {
+    background-color: #272449;
+    color:white !important;
+    padding: 10px 15px !important;
+}
+.crs_ovw_img a {
+    color: white !important;
+}
+.crs_ovw_img a:hover {
+/*     border-bottom: thin dotted #efefef !important; */
+}
+
+.crs_ovw_img a:after {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+/*     font-size: 20px; */
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f061";
+    color: white;
+    text-decoration: none !important;
+    border-bottom: 0px dotted !important;
+    padding-left: 5px;
+}
+.crs_ovw_img a:hover:after {
+/*     font-size:21px; */
+    font-weight:bold;
+}
+//  END ADDITIONS FOR UGT 2016
+
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+//  New Testimonials for end 2015. Note that all CSS for fulltext is also below
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+.ktestimonial:nth-of-type(even) {
+    background-color: #2C3556      ;
+}
+#midCol p.ktest-quote {
+font-size: 21px;
+line-height: 28px;
+}
+.ktestimonial {
+    background-color: #272449;
+    border-radius: 2px;
+    padding: 30px 50px 30px 50px;
+    overflow: auto;
+    margin-bottom:5px
+
+}
+.ktestimonial, .ktestimonial h3, .ktestimonial h4, .ktestimonial p {
+    color:white !important;
+}
+#midCol .ktestimonial .lead_img img {
+    border-radius: 50%;
+}
+.ktest-primary {
+    width:40%;
+    float:left;
+}
+.ktest-secondary {
+    width:59%;
+    float: right;
+}
+.lead_img img {
+    width: 200px;
+    height: 200px;
+}
+.ktestmore {
+    margin-top:5px;
+}
+div#midCol .ktestmore a:hover {
+    border-bottom: thin dotted white !important;
+}
+#midCol .ktestmore i {
+    color:white !important;
+}
+.ktestmore a {
+    color:white !important;
+        font-size:18px;
+}
+///////////////////////////////////////////////////////////////////////////////////////////
+// FULL TEXT
+.ktestimonial-full-image {
+float:right;
+margin-left:5px;
+margin-bottom:10px;
+padding:5px;
+background-color: #272449;
+}
+.ktestimonial-full-image img {
+height:200px;
+width:200px;
+}
+////////////////////////////////////////////////////////////////////////////////////////////
+// END ktestimonial
+////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+//  New Slide Show for start 2016. Note that all CSS for fulltext is also below
+// THIS IS CARBON COPY OF ktestimonial but traded ktestimonial for kSSlide. This is so that
+// running slides and testimonials on the same page will work.
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+.kSSlide:nth-of-type(even) {
+    background-color: #2C3556      ;
+}
+#midCol p.ktest-quote {
+font-size: 21px;
+line-height: 28px;
+}
+.kSSlide {
+    background-color: #272449;
+    border-radius: 2px;
+    padding: 30px 50px 30px 50px;
+    overflow: auto;
+    margin-bottom:5px
+
+}
+.kSSlide, .kSSlide h3, .kSSlide h4, .kSSlide p {
+    color:white !important;
+}
+#midCol .kSSlide .lead_img img {
+    border-radius: 2px;
+}
+.ktest-primary {
+    width:40%;
+    float:left;
+}
+.ktest-secondary {
+    width:59%;
+    float: right;
+}
+.lead_img img {
+    width: 200px;
+    height: 200px;
+}
+.ktestmore {
+    margin-top:5px;
+}
+div#midCol .ktestmore a:hover {
+    border-bottom: thin dotted white !important;
+}
+#midCol .ktestmore i {
+    color:white !important;
+}
+.ktestmore a {
+    color:white !important;
+        font-size:18px;
+}
+///////////////////////////////////////////////////////////////////////////////////////////
+// FULL TEXT
+.kSSlide-full-image {
+float:right;
+margin-left:5px;
+margin-bottom:10px;
+padding:5px;
+background-color: #272449;
+}
+.kSSlide-full-image img {
+height:200px;
+width:200px;
+}
+////////////////////////////////////////////////////////////////////////////////////////////
+// END kSSlide
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+/**** HERE  ARE THE CSS3 RULES FOR STUDENT HUB HEROS AND 3RD PANELS FOR RES. PUT THIS ALL IN SASS FILE WHEN ITS SETTLED */
+.panelHenry {
+    vertical-align: top;
+    width: 210px;
+    display: inline-block;
+    text-align: left;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    padding: 10px;
+    margin: 1%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 5px solid white;
+    -webkit-box-shadow: 0 0 1px 0 #00293d;
+    box-shadow: 0 0 1px 0 #00293d;
+}
+/* list items for category student hub */
+.stuhub_stand {
+    display: block !important;
+    text-align: center;
+    /* width: 85px; */
+    
+    border: 1px solid silver;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    float: left;
+    white-space: nowrap;
+    font-size: 14px;
+    background-color: #404040;
+}
+
+#midCol .stuhub_stand a {
+    color: white;
+    border-bottom: none !important;
+}
+
+#midCol .stuhub_stand a:hover,
+#midCol .stuhub_stand a:visited {
+    color: #e0e0e0;
+}
+
+
+//  NEW for site wide News template. Will have effect on Student Hub as well
+.stuhub_stand a:after {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    /* font-size: 26px; */
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\00a0 \00a0 \f061";
+    color: white;
+    text-decoration: none !important;
+    border-bottom: 0px dotted !important;
+}
+
+
+
+
+
+/**************** LOOK OUT FOR THIS, needs to be a user requirement for uploading *******/
+
+.land_hero img {
+    max-width: 180px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all 1.5s ease-in;
+    transition: all .5s ease-in;
+}
+/* fix line height */
+
+.land_hero h3 {
+    line-height: 1.2em;
+}
+/* add overflow: hidden; to the div that surrounds the image if you want the image to zoom too. */
+
+.hero_wind {
+    overflow: hidden;
+}
+
+.land_hero:hover img {
+    // -moz-transform: scale(1.1);
+    // -webkit-transform: scale(1.1);
+    // -o-transform: scale(1.1);
+    // -ms-transform: scale(1.1);
+    // transform: scale(1.1);
+}
+
+.land_hero:hover img.sh {
+    // -moz-transform: scale(1.1) translateX(10px) skewY(3deg);
+    // -webkit-transform: scale(1.1) translateX(10px) skewY(3deg);
+    // -o-transform: scale(1.1) translateX(10px) skewY(3deg);
+    // -ms-transform: scale(1.1) translateX(10px) skewY(3deg);
+    // transform: scale(1.1) translateX(10px) skewY(3deg);
+}
+
+.land_hero {
+    display: inline-block;
+    text-align: center;
+    // -webkit-transition: all 1s;
+    // -moz-transition: all 1s;
+    // -ms-transition: all 1s;
+    // -o-transition: all 1s;
+    // transition: all 1s;
+    transition: box-shadow 1s;
+    padding: 10px;
+    margin: 1%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 5px solid white;
+    -webkit-box-shadow: 0 0 1px 0 #00293d;
+    box-shadow: 0 0 1px 0 #00293d;
+    vertical-align: top;
+    width: 210px;
+}
+
+.land_hero h3 {
+    font-weight: normal !important;
+    max-width: 180px;
+    /* height: 30px; */
+}
+
+.land_hero:hover {
+    -webkit-box-shadow: 0 0 6px 0 #00293d;
+    box-shadow: 0 0 6px 0 #00293d;
+    /*        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);*/
+}
+
+.land_hero a {
+    border-bottom: none !important;
+}
+
+// END LANDING HERO CARDS
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+/* NOW FOR THE MINI BANNER x2 WIDTH VERSIONS */
+
+.homeland {
+    /* background-color: red; */
+    /* width: 420px; */
+    /* height: 180px; */
+    
+    display: inline-block;
+    padding: 0px;
+    margin: 20px;
+    text-align: center;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 5px solid white;
+    -webkit-box-shadow: 0 0 1px 0 #00293d;
+    box-shadow: 0 0 1px 0 #00293d;
+    vertical-align: top;
+}
+
+.homeland:hover {
+    -webkit-box-shadow: 0 0 6px 0 #00293d;
+    box-shadow: 0 0 6px 0 #00293d;
+}
+
+.homeland h3 {
+    font-size: 13px;
+}
+
+.homeland img {
+    max-height: 130px;
+    max-width: 420px;
+}
+
+.hero_wind {
+    position: relative;
+}
+
+.homeland-caption {
+    position:absolute;
+    top:0px;
+    padding:18px 18px;
+    background: rgb(39, 36, 73);
+    background: rgba(39, 36, 73, 1);
+    text-align: left;
+    max-width:60%;
+}
+
+html .homeland-caption h3 {
+    color:white !important;
+    font-size: 17px;
+    font-size: 1.7rem;
+    line-height: 21px;
+    line-height: 2.1rem;
+}
+
+/* END THE MINI BANNER x2 WIDTH VERSIONS */
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+/* SOCIAL MEDIA PANEL ICONS */
+
+.soclist {
+    display: inline-block;
+    padding: 0px 4px 0px 0px;
+    width: 40px;
+}
+.socs {
+margin: 20px 0px 0px 0px;
+text-align: center;
+}
+.socs a {
+border-bottom:none !important;
+}
+.soclist img {
+/*    filter: url(filters.svg#grayscale); */ /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */    
+    transition: all .3s ease-in;  
+   
+}
+.soclist img:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+
+///////////////////////////////
+///////////////////////////////
+// START DAVE ADLINGTON LANDING CARD HERO VERSION 2
+.land_hero_2 {
+   -moz-box-sizing: border-box; 
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   box-shadow: none;
+   display: inline-block;
+   min-height: 120px;
+   border: 0;
+   text-align: center;
+   padding: 10px;
+   vertical-align: top;
+   -webkit-transition: box-shadow 218ms ease 0s;
+   -moz-transition: box-shadow 218ms ease 0s;
+   -ms-transition: box-shadow 218ms ease 0s;
+   -o-transition: box-shadow 218ms ease 0s;
+ 
+   /* 3 cols */
+   margin: 1%;
+   width: 213px;
+
+   /* 4 cols */
+   /* margin: 1.5em 0.4em 0;
+   width: 156px; */
+}
+
+.land_hero_2:hover {
+ -webkit-box-shadow: 0 4px 16px #d0d0d0;
+ box-shadow: 0 4px 16px #d0d0d0;
+}
+
+.land_hero_2 h3 {
+line-height: 1;
+font-weight: bold !important;
+font-size:15.2px;
+font-size: 1.52rem !important;
+}
+
+.land_hero_2 p {
+line-height: 1;
+font-size:13px;
+font-size: 1.3rem !important;
+}
+// END DAVE ADLINGTON LANDING CARD HERO VERSION 2
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+
+
+
+/* ADDITIONAL UNDERGRADUATE COURSE CMA RULES TO SHOW NEW TABS AS DEFAULT */
+/* Taken from template and placed in this file April 7th 2016. CB. */
+/* show new CMA course tabs */
+#midCol .courseOverview, #midCol #ugt15, #midCol #ugt16, #midCol #ugt17, #midCol #ugt18, #midCol #ugt19, #midCol #ugt20, #midCol #ugt22, #midCol #ugt23, #midCol #ugt24 {
+    display:inline !important;
+}
+#midCol #keymodeofstudy, #midCol #keydurationofstudy {
+    display: table-row !important;
+}
+
+/* hide old */
+#midCol #ugt1, #midCol #ugt6, #midCol #ugt7, #midCol #ugt8, #midCol #ugt9, #midCol #ugt2, #midCol #ugt4, #midCol #ugt14, #midCol .keystudyabroad {
+    display:none !important;
+}
+
+
+
+
+
+/* hiding by default and let liveKeele and stagedev show/ hide as they wish */
+.modify-t4-tag {
+    display:none;
+}

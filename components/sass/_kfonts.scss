@@ -1,0 +1,300 @@
+/* This file is only imported in the kfonts git branch started 20th May 2015 */
+
+/* There's no Vertical Rhythm per se other than the fact that everything is based on 3.5 or 7 px/rem
+intervals. Note that the smallest set font and the base font is set to 14px. The ONLY place this
+goes smaller is for a) the main nav b) the kfooter
+*/
+
+.liveKeele {
+
+	/* Need to only load Google Muli on the live site from now on */
+
+	// html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, /* strong, */tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	// 		font-family: 'Muli', sans-serif !important;
+	// }
+
+	// b, strong {
+	// 	font-family: 'mulibold', sans-serif !important;
+	// }
+
+} //close liveKeele
+
+
+
+// .stagedev {
+
+	html, b, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+		font-family: 'Open Sans', sans-serif !important;
+	}
+
+	// b, strong {
+	// 	font-family: 'mulibold', sans-serif !important;
+	// }
+// } commenting out for golive // close stagedev
+
+
+
+
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////// THIS BLOCK IS THE NEW FONT STYLES READY FOR LAUNCH
+///////////// NOTE THAT THE FONT CAL IS IN MIXINS
+/////////////////////////////////////////////////////////////////
+
+// NOTE that I'm using #midCol to match & override the specificity weight of the live fonts
+
+// first set to base 10
+// remember to REMOVE stagedev on go live!!!!!!!!!!!!!!!!!!! IMPORTANT
+// html.stagedev {
+html{
+		font-size: 62.5%;
+}
+
+// .stagedev { commented out for stagedev
+
+	// now set body to 16px which under base 10 is 1.6rem
+	body {
+		@include fontsize(1.4, 1.75);
+	}
+
+
+
+	.tMidImage #imgBlockMid h1 {
+			// Need to use important for now to target the banner h1 so keeping this manually set for now
+			// here's the @include ready for when we launch though
+  			// @include fontsize(3.5, 4.2);
+			font-size: 35px !important;
+			line-height: 42px !important;
+			font-size: 35px !important;
+			line-height: 42px !important;
+
+			font-weight: initial;	
+	}
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+// MIDCOL CONTAINER
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+	#midCol {
+		h1  {  
+  			@include fontsize(3.5, 4.2);
+			font-weight: initial;
+		}
+		// h2 {
+		// 	@include fontsize(3.15, 3.85)
+		// }
+		h3 {
+			@include fontsize(2.8, 3.5);
+			font-weight: initial;
+		} //h3
+		h4 {
+			@include fontsize(2.45, 3.15);
+			font-weight: initial;
+		}
+		h5 {
+			@include fontsize(2.1, 2.8);
+			font-weight: initial;
+		}
+		h6 {
+			@include fontsize(1.75, 2.45);
+			font-weight: initial;
+		}
+		p {
+			@include fontsize(1.4, 2.1);
+			// this needs attention as I'm currently just matching the old 'em' setting
+  			padding: 5px 0; 
+  			padding: .5rem 0 .5rem 0;
+		} // p
+
+
+		// over rule users trying to put strong within headings
+		h1, h2, h3, h4, h5, h6 {
+			strong {
+				font-weight: normal;
+			}
+		}
+		
+
+		.imgListing i {
+			@include fontsize(2.1, 2.45);
+		}
+		/* i tag chamged to h3 */
+		.imgListing h3 {
+			@include fontsize(2.1, 2.5); 
+			    padding:0 0 0.4em 0; /* ems taken from original i tag */
+		}
+		.imgListing strong {
+    		font-weight:normal !important;
+		}
+		.land_hero h3 {
+			@include fontsize(1.75, 2.45);
+		}
+
+
+		// override ol li
+		ol li {
+			// font-size: initial !important;
+		}
+
+		div#keyfact h4, div.courseOverview h4 {
+			@include fontsize(2.1, 2.8);
+		}
+
+		table td {
+    		@include fontsize(1.4, 2.1);
+		}
+
+		.simpleLeft, .simpleRight { 
+			.imgListing i {
+				@include fontsize(1.75, 2.45);
+				margin-left: 61px;
+			}
+			.imgListing p {
+				// margin-left:61px;
+			}
+		} // end simpleLeft and simpleRight
+
+
+	} // end midCol container
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+//Can't embed these:
+
+// this fixes the feature box margins on twoCol layouts.
+// .twoCols #midCol .simpleLeft .imgListing p, .twoCols #midCol .simpleRight .imgListing p {
+//     		margin-left:0px;
+// 		}
+// end 'Can't embed these!'		
+
+
+
+/////////////////////////////////////////////////////////////////
+//////// FIXES FOR OLD CSS RULES SET TO EMS
+//|	
+///// OLD RIGHT AND LEFT COLUMNS
+	#leftCol h3, #rightCol h3 {
+		@include fontsize(1.5, 2.1);
+		font-weight: initial;
+	}
+	#rightCol h3, .related h3 {
+	    color:white !important;
+	    background-color:#272449 !important;
+	    margin: .5rem 0 0 0;
+	    // padding: .5rem 0 .4rem .5rem;
+	    padding: .9rem; /* turned up the padding as the em was inheriting */
+	}
+	#leftCol h3 {
+		text-transform: uppercase;
+	}
+	.rightLinks ul li a {
+		@include fontsize(1.5, 2.1);
+	}
+	ul.subNav li a, ul.subNav li span {
+		@include fontsize(1.4, 1.6);
+	}
+	.related ul li {
+		@include fontsize(1.4, 1.6);
+	}
+
+	// breadcrumbs
+	#midCol ul.breadCrumbs li {
+		@include fontsize(1.2);
+	}
+	#midCol ul.breadCrumbs li a {
+		font-weight: initial;
+	}
+
+	.panel_content3 .panelContent ul li {
+		font-size: 1.4rem;
+  		line-height: 1.5rem;
+  		padding-top: 10px;
+	}
+
+	// THIS SHOULD OVER WRITE THE NUMEROUS BAD FONT SIZE AND LINE HEIGHTS ACROSS THE OLD CSS 
+	// THE OLD ONES NEED DELETING ONCE THE NEW SITE GOES LIVE
+	#midCol ul li, #midCol ul li p, #midCol ul li li, #midCol ol li li {
+		font-size: 14px !important;
+		font-size: 1.4rem !important;
+		line-height: 21px !important;
+		line-height: 2.1rem !important;
+	}
+	#midCol ul {
+	    padding-left:0px;
+	    margin: 10px 0 10px 20px;
+	}
+	#midCol ul li {
+	    background:initial;
+	    list-style:disc outside;
+	    padding:5px 0px 5px 0px;
+	}
+// UL tabs for tabbed content. Stop it inheriting the global ul & li 
+	#midCol .tabscontainer ul > li {
+	  list-style: none;
+	}
+	#midCol .tabscontainer ul {
+	  margin:0px !important; 
+	}
+	
+	// fix expandables in webstage only for now
+	.toggler, .toggler:hover {
+		@include fontsize(1.75, 2.45);
+		padding:10px 25px 10px 20px;
+		height:initial;
+	}
+
+/////////////////////////////////
+/////////// File downloads
+
+				#midCol div.download h3 a {
+					font-size:intial;
+					font-weight: normal;
+				}
+				#midCol div.download h3 {
+					font-size: 21px;
+					font-size: 2.1rem;
+					margin:0px;	
+					background:white;
+			}
+
+
+			#midCol div.download h3 a {
+				font-size: 21px;
+				font-size: 2.1rem;
+				padding:0px 0px 0px 30px;
+				color:#272449 !important;
+			}
+
+			#midCol div.download h3.Word a, #midCol div.download h3.image a, #midCol div.download h3 a   {
+			 background-position:left center;   
+			}
+//////////////////////
+/////////// end file downloads
+/////////////////////////////////
+
+	////////////////////////////////////
+	//////////// NEW HOMEPAGE KPAGE
+	////////////
+	
+	.crss {	
+			h1  {  
+		  		@include fontsize(3.5, 4.2);
+				font-weight: initial;
+			}
+			ul a {
+				@include fontsize(1.75, 2.45);
+				color:white;
+			}
+			input {
+				color:black;
+			}	
+	} // end .crss
+
+
+#midCol .imgListing em {
+	font-size:14px;
+	line-height:18px;
+}
+
+
+// } commeting out for golive // end stagedev

@@ -1,0 +1,220 @@
+.kfoot {
+	// display:none;  commenting so it now shows on the live site   // hide from live site
+}
+// NOTE THAT old copyright etc is hidden below now
+
+
+
+
+
+// now nest rules for the toggle
+// .stagedev {    commenting out for golive
+
+	// // first let's fix the homepage banner to center it
+	// #slider {
+	// 	margin:auto;
+	// 	margin-top:10px;
+	// }
+
+
+	// set this to pixel height later if percentage based causes problems
+	#footer {
+		height: 100% !important;
+	}
+
+	.kfoot {
+		display: block;
+	    font-size:13px;
+  		width: 924px;     // width margin and padding are duplicated into .kpagewidth
+  		margin: 0 auto 0 auto;
+  		padding:40px 0 30px 0;
+  			h2 {
+  				font-size: 17px;
+  				color: white !important; // remove important once blue site has gone live
+  				padding: 0px;
+  				text-transform: uppercase;
+  			}
+  			a {
+  				@include link-colors(#e0e0e0, #ffffff, #ffffff, #e0e0e0);
+  			}
+  			i { // for font awesome icons
+  				color: white !important;
+  			}
+  			.email, .ktel, .location, .kfootsocIns {
+  				float: initial;
+	  				i {
+	  					padding-right: 10px;
+	  				}
+	  				span {
+	    				display:none;
+	    			}
+			}
+			// .socs {
+			// 	text-align: left;
+			// 		.soclist {
+			// 			width:30px;
+			// 			height:30px;
+			// 				img {
+			// 					width: 30px;
+			// 					height: 30px;
+			// 				}
+			// 		}
+			// }
+			
+	}
+
+	.kfoot a:hover {
+  		color:#2BB675 !important;
+	}  /* Adding in to secure the green rollover. Could probably be nested under kfoot tbh though */
+
+	.kfootsoc {
+		margin-top: 30px;
+		display: inline-block;
+	}
+	.kfootsocIns {
+		display: inline;
+	}
+	#copyright, #footInfo, #address, .addthis_button {
+	    display:none;
+	}
+	.footer-col {
+    width:25% !important;
+    float:left;
+	}
+	.kfbmeg {
+    margin-top:32px; // give some breathing room above this h2 as it's the second row in a column
+	}
+	.footul {
+		margin-top: 15px;
+			li {
+				max-width:220px;
+				padding-bottom:10px;
+			}
+			li a {
+				line-height: 17px; // trying to avoid link hover bleed
+			    padding:5px 0px 7px 0px !important;
+			}
+	}
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+// footer-col4
+////////////////////////////////////////////////////////////////////////////
+	#footer-col4 p {
+    	padding:0 0 9px 0;
+    	margin: 0px;
+	}
+	.kfootMap img {
+    	float:right;
+    	padding-top: 29px;
+	}
+	.kfootaddress {
+    	margin: 20px 0 10px 0px !important;
+	}
+
+
+	.affil-kfoot {
+		img {
+		float:right;
+		margin-left:10px;
+		margin-right:10px;
+		// margin-top:130px !important;
+		margin-top:94px;
+		}
+		span {
+			display:none;
+		}
+	} // end affil-kfoot
+
+// START ACCESS INFO LINK
+		.dg-txt {
+		float: left;
+		margin-top: 4px;
+		margin-left: 8px;
+		        font-size:14px;
+		}
+		.dg-access {
+		    /*border:solid 1px #272449;*/
+		    padding: 3px 3px 3px 0px;
+		    margin-top:25px;
+		}
+		.dg-access i {
+			float:left;
+		}
+		.kfoot .dg-access a:hover {
+		    color: white !important;
+		}
+
+		// main body version:
+		.dg-txt-main {
+		float: left;
+		margin-top: 4px;
+		margin-left: 8px;
+		        font-size:22px;
+		        line-height:24px;
+
+		}
+		.dg-access-main {
+		    /*border:solid 1px #272449;*/
+		    padding: 3px 3px 3px 0px;
+		    margin-top:5px;
+		    max-width:220px;
+		}
+		.dg-access-main i {
+			float:left;
+		}
+// END ACCESS INFO LINK
+
+
+
+// KFOOT_booster
+/* overwrite main socs styles just for footer booster */
+.socs {
+    margin: 0px;
+    text-align: right;
+}
+
+
+
+.kat-footer {
+    background-color:#DDD6CF   ;
+}
+.kat-footer {
+    width: 1013px;
+/*    height: 100px; */
+    margin: auto;
+    padding: 0px;
+    clear: left;
+}
+.kat-foot-cont {
+    display: block;
+    font-size: 13px;
+    width: 924px;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 20px 0;
+}
+/* now make thirds across */
+.katfoot-pan {
+ /*width:33%;*/
+ float:left;   
+}
+.kpan-a {
+  width:70%;
+}
+.kpan-b {
+  width:30%
+}
+.kpan-cont-inner {
+    padding:10px;
+}
+/* set up mainly for the address */
+.kat-footer p {
+    padding:0px;
+    line-height:21px;
+    font-size:14px;
+}
+
+
+
+
+// } commeting out for golive     //end .stagedev nest parent

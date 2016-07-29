@@ -1,0 +1,18 @@
+ /* We're not at the point of creating mobile percentage variants yet and so for
+ now we're sticking with base 10 font and setting body to 14px font */
+
+
+@mixin fontsize($size: 1.4, $line: 1.75) {
+	font-size: ($size * 10) + px;
+	line-height: ($line * 10) + px;
+	font-size: $size + rem;
+	line-height: $line + rem;
+}
+
+// AUTO DEFAULT LINE HEIGHT VERSION --
+// @mixin fontsize($size:1.6, $line: $size * 1.5){
+//     font-size:   ($size * 10) + px;
+//     line-height: ($line * 10) + px;
+//     font-size:   $size + rem;
+//   	line-height: $line + rem;
+// }

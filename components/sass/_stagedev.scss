@@ -1,0 +1,46 @@
+.stagedev {
+
+#midCol #ugt1, #midCol #ugt6, #midCol #ugt7, #midCol #ugt8, #midCol #ugt9, #midCol #ugt2, #midCol #ugt4, #midCol #ugt14 {
+    display:none !important;
+}
+
+// modify button bottom of page
+.modify-t4-tag {
+    clear:both;
+    padding: 20px;
+    display:inline;
+}
+
+
+// Highlight automatically created kis stats
+		.outpM, .outpM a{
+			background-color:maroon;
+			color: white !important;
+		}
+		.outpS, .outpS a{
+			background-color: silver;
+		}
+		.outpF, .outpF a{
+			background-color: firebrick;
+			color: white !important;
+		}
+		// end highlight auto kis stats
+
+// CMS entered fields
+		.extra {
+			background-color: #e0e0e0;
+		}
+		.non-scims{
+			border:1px solid red;
+		}
+		.man-fy {
+		    border:1px solid green;
+		}
+		.man-add-1 {
+		    border:1px solid blue;
+		}
+		.man-add-2 {
+		    border:1px solid cyan;	
+		}
+
+} // end .stagedev

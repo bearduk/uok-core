@@ -1,0 +1,34 @@
+.liveKeele {
+
+	// .affil-kfoot {
+	// 	display:none;
+	// }
+
+
+/* REMEMBER TO ADD THESE TO print.css too */
+
+// CMA CONTENT TO HIDE ON LIVE SITE
+#keymodeofstudy, #keydurationofstudy, #ugt14, #ugt15, #ugt16, #ugt17, #ugt18, #ugt19, #ugt20, #ugt22, #ugt23, #ugt24 {
+	display:none !important;
+}
+
+///////////////////////////////////
+/* KIS WIDGET GO LIVE */
+// .kiswidgt, #midCol #ugt3 {
+// 	display:none !important;
+// }
+// #midCol #ugt13 {
+// 	display: inline !important;
+// }
+/* END KIS WIDGET GO LIVE */
+///////////////////////////////////
+
+.modify-t4-tag {
+	display:none !important;
+}
+
+.crs_ovw_img {
+// display:none;
+}
+
+} // end .liveKeele

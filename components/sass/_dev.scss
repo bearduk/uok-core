@@ -1,0 +1,293 @@
+/* Nested CSS so I can target stagedev with javascript */
+// .stagedev { commented for launch
+
+
+body {
+  background: #e0e0e0; /* overrides the old fade pixel */
+}
+
+  //  new features in page width:
+.kpagewidth {
+      width: 924px;     // width margin and padding are duplicated into .kfoot. I've put them in separate places so they can be changed independabtly
+      margin: 0 auto 0 auto;
+      padding:20px 0 0px 0;
+}
+
+// Mega Menu show clearing
+#navigation a.mmclear {
+  // display: none !important;
+  border: solid black 1px;
+  background-color: white;
+  color: black !important;
+}
+
+#header {
+  padding-top:32px;
+  padding-left:0px;
+
+  @include border-corner-radius(top, left, 2px);
+  @include border-corner-radius(top, right, 2px);
+
+}
+
+#search #query {
+  font-size: 12px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+button.btn {
+  padding: 4px 6px 4px 6px;  
+}
+
+
+
+// set heading colours to default blue
+      #midCol i, #{headings(2,6)} {
+      color: $keele-blue !important;
+    }
+
+.rightLinks h3 {
+  color:white !important;
+}
+
+
+// Feature box changes
+.featurebox_type2 img, .imgListing img, span.curveBrSmall {
+@include border-radius(3%);
+background: initial !important;
+}
+// override fonts set at 12px on current site
+.imgListing strong {
+      @include fontsize(1.4, 2.1);
+}
+.curvedImage {
+  margin: 0px 20px 5px 0px;
+}
+
+.curvedImage img {
+    // time to get rid of the image overlay corners (see above commented out)
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.curvedBL span.curveBL {
+  background: none;
+}
+
+// end feature box changes
+
+#footer {
+  background: $keele-blue;
+  width: 1013px;
+  height: 400px;
+  margin: auto;
+  padding: 0px;
+  clear: left;
+  /* background-color: #060004; */
+  /* float: left; */
+  /* margin-left: 7px; */
+}
+
+.tMidImage #imgBlock {
+  height:238px !important;
+  float:left;
+}
+
+.tMidImage #imgBlockLeft {
+  height: initial;
+}
+#imgBlockLeft {
+  height: initial;
+  width: initial;
+  float: initial;
+  padding: initial;
+  margin: initial;
+  display: none;
+}
+
+
+#imgBlockMid {
+  float:initial;
+	width:100%;
+        h1 {
+          left:0px !important; // This should overwrite the 22px set in the old site.
+        }
+}
+
+#header {
+    background:white;
+}
+
+// HACK INTO THE HEADER PADDING PROBLEM OF 24px
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #header {
+    padding: 32px 24px 5px 0px;
+  } 
+}
+
+  .homeLink img {
+    padding-left: 24px;
+  }
+
+  #navigation {
+    width:1013px;
+  }
+
+.topNav {
+  left:0px !important; //fixes the 24 px error
+}
+
+//end header hack
+
+
+#content {
+    background:white;
+}
+
+
+#imgBlock {
+    padding:0px;
+	width: 1013px !important;
+}
+
+/* Watch out for this one as the image doesn't have it's own class or if yet */
+.banner_instance img {
+    // height:initial !important;
+    width:1013px !important;
+    height:238px !important;
+}
+
+
+
+span.banner_NoRightHandFade {
+display:none;
+}
+
+.tMidImage #imgBlockMid h1 {
+// font-size: 4.3em !important;
+  // padding: 1.2rem .5rem 1.2rem 1.2rem;
+  padding: 14px 8px 14px 19px;
+  float:right;
+  background-color: $keele-blue;
+  color:white;
+  left: initial !important;
+
+  // font-size: 43px !important;
+  // font-size: 30px !important;
+  width: auto;
+  // max-width: 62%;
+  max-width: 44%;
+  // line-height: 43px;
+  // line-height: 34px;
+  position: relative;
+  top: -200px;
+
+/////////// FONT SIZES MOVED TO KFONT FILE
+
+  @include border-corner-radius(top, left, 2px);
+  @include border-corner-radius(bottom, right, 2px);
+
+// -webkit-border-top-left-radius: 2px;
+// -webkit-border-bottom-left-radius: 2px;
+// -moz-border-radius-topleft: 2px;
+// -moz-border-radius-bottomleft: 2px;
+// border-top-left-radius: 2px;
+// border-bottom-left-radius: 2px;
+
+}
+#imgBlockMid h1 {
+width:initial;
+}
+
+/* nav */
+ul.topNav>li>a, ul.topNav>li.last, ul.topNav>li.noLine>a, ul.topNav>li.first {
+background:$keele-blue;
+
+}
+ul.topNav>li>a:hover {
+  background:$keele-blue;
+}
+/* right hand side overlays */
+#imgBlockRight {
+display:none;
+}
+span.landingOverlay {
+display:none;}
+
+
+/* Top nav */
+
+/* js added class of .sticky */
+
+@media (min-width:641px) {
+#navigation {
+    transition: all 0.4s ease;
+}
+
+#navigation.sticky {
+    top: 0px !important;
+    position: fixed !important;
+}
+
+} // end 641
+
+/* end .sticky block */
+
+
+#navigation {
+  float: initial;
+  position: initial;
+  top: initial;
+  z-index: 998;
+}
+/* this is dangerous for cross browsers. Really, we should be ripping the nav out and moving into a new html nav block. Then rename the old #navigation block to something better/ more semantic */
+ul.topNav {
+  font-size: 13px; 
+  float:right !important;
+top: 10px !important;
+  // left: 24px !important; // now set within the header hack above.
+
+/* watch cross browsers here */
+width: 1013px !important;
+  background: $keele-blue !important;
+margin:0px !important;
+z-index:950 !important;
+top: 0px !important;
+
+}
+.topNav {
+left:0px;
+}
+
+.ddContainer {
+    background: $keele-blue !important;
+    @include border-radius(0 0 3px 3px);
+}
+// end top nav
+
+
+#fadeCornercb {
+// override my homepage hack from years ago.
+width:1013px;
+}
+
+
+
+#fadeCorner {
+  /* for schools */
+  background:white !important;
+}
+
+
+// Right Column
+#rightCol .rightLinks {
+  @include border-radius (4px 0 0 4px);
+  h3 {
+    background: $keele-blue;
+  }
+}
+
+
+
+// } commented for launch // close .stagedev
