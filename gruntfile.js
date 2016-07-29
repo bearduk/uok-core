@@ -6,7 +6,8 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		// create link to package.json items
     	pkg: grunt.file.readJSON('package.json'),
-		
+
+      // grunt-contrib-compass		
     	compass: {                  	// Task
     		dev: {                   	// Target
 				options: {              // Target options
@@ -23,9 +24,14 @@ module.exports = function(grunt) {
     		} // close dev
     	}, // close compass
 
+      // grunt-postcss
     	postcss: {
 			options: {
-    			processors: [
+    			map: {
+            inline: false,
+            annotation: 'builds/production/css'
+          },
+          processors: [
       				require('pixrem')(), // disable if this gives issues with font mixins
       				require('autoprefixer')({ browsers: ['last 2 versions'] }),
       				require('cssnano')() // minify the result
