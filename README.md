@@ -6,8 +6,6 @@ Based on Node (including npm) and Grunt.
 
 This repo is a rebase of the old CodeKit setup.
 
-You will need to have NodeJS (including NPM), Git and Ruby (including RubyGems) installed on your machine.
-
 ## What you'll need
 You will need to have NodeJS (including NPM), Git, Ruby (including RubyGems) and Compass installed on your machine.
 
