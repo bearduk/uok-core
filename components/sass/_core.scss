@@ -1,0 +1,4196 @@
+/*******************************************************************************************************************/
+// This partial is mainly the original CSS document
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  vertical-align: baseline;
+}
+#schGo #txtgo {
+  font-size: 13px !important; }
+/* Accessibility bar*/
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+&:focus {
+position:static;
+width:auto;
+height:auto;
+color: #FFFFFF;
+background-color:#000;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+padding:7px;
+    }
+}
+
+// /* hide mobile mobTog */
+// .mobTog {
+// display:none;
+// }
+
+// Style for the tabbed jquery ui content. This meant for course pages but watch out as may apply to othe areas
+.tabscontainer #tabs {
+  float:left; margin-top:10px; width:690px;
+} // note that the width is nulled out on mobile (set to 100% or initial)
+div#keyfact {
+  width:435px;
+  float:left;
+  margin-top: 9px;
+} // note that mobile styles set this to 100%
+
+// this is for the hiding of the last comma on the courses type optional output in key facts
+div#keyfact .typedivider:last-of-type {
+    display:none;
+}
+
+// NEW STYLE FOR CMA COMPLIANT UGT PAGES 2015
+.courseOverview h4 {
+    background-color:#272449;
+    color:white !important;
+    padding-left:1.8rem !important;
+    text-align: center;
+}
+.courseOverview_content {
+padding:20px;
+border:1px solid #272449;
+}
+.main-ug-title {
+  background-color: #272449;
+    color: white !important;
+    padding-left: 1.8rem !important;
+    text-align:center;
+}
+#midCol .main-ug-title {
+  font-size: 21px;
+    line-height: 28px;
+    font-size: 2.1rem;
+    line-height: 2.8rem;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+.buttonapply a {
+  padding:2px;
+}
+// END STYLE FOR CMA COMPLIANT UGT PAGES
+
+
+
+
+
+
+/* this was set to 12px in the old site. Moving to kfonts and removing this one */
+// table td {
+//     font-size:12px;
+// }
+
+/* UG Courses tab title */
+.printtabtitle {
+  display: none;
+  left:-9999px;
+}
+
+/*a:focus {
+    -moz-outline-radius: 5px 5px 5px 5px;
+    outline: 2px solid #412C84 !important;
+    outline-offset: 0;
+}*/ 
+
+/*End Accessibility bar */
+
+/********************* START Fix for Webkit Search box line up *************/
+#navigation {
+  float: left;
+  position: relative;
+  // top: 3px;
+  z-index: 998; }
+
+#schField, #schGo {
+  display: inline;
+  float: left; }
+
+#schField {
+  padding-right: 4px; }
+/********************* END Fix for Webkit Search box line up *************/
+/*LHS icons*/
+/* pdfs */
+ul.subNav a[href$=".pdf"] {
+  padding-right: 20px;
+  background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) no-repeat center right; }
+
+ul.subNav a:hover[href$=".pdf"] {
+  padding-right: 20px;
+  background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) no-repeat center right #eeeeee; }
+
+ul.subNav .currentHead0 ul li a[href$=".pdf"]{
+  padding-right: 20px;
+  padding-left:30px;
+  background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) no-repeat center right; }
+
+ul.subNav .currentHead0 ul li a:hover[href$=".pdf"]{
+   padding-right: 20px;
+  padding-left:30px;
+  background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) no-repeat center right; }
+
+/* protected intranets */
+ul.subNav a[href*="/intranet"], ul.subNav a[href*="/sif"]{
+  background: url("http://www.keele.ac.uk/jq/images/Locked-3.png") no-repeat scroll right center transparent;
+  padding-right: 20px; }
+
+ul.subNav a:hover[href*="/intranet"], ul.subNav a:hover[href*="/sif"]{
+    padding-right: 20px;
+  background: url("http://www.keele.ac.uk/jq/images/Locked-3.png") no-repeat scroll right center #eeeeee; }
+
+/*end LHS icons*/
+/* Ink Black highlight CB */
+::selection {
+  background: #fff2a8;
+/* Safari */
+  color: #0f0f0f; }
+
+::-moz-selection {
+  background: #fff2a8;
+  /* Firefox */
+  color: #0f0f0f; }
+
+/*Ink black highlight end*/
+
+
+blockquote {
+    background: url(http://www.keele.ac.uk/jq/quote/bg-quote2.png) no-repeat #efefef !important;     
+    border-left: 1px dashed #ccc !important;
+    margin: 30px !important;
+    padding: 30px 30px 30px 50px !important;     
+        font-size:21px !important;
+        font-size:2.1rem !important;
+        line-height:28px !important;
+        line-height:2.8rem !important;
+} 
+// fixes for where users have used various content in blockquotes, Not ideal I know. CB.
+blockquote div, blockquote p {
+        font-size:21px !important;
+        font-size:2.1rem !important;
+        line-height:28px !important;
+        line-height:2.8rem !important;
+}
+
+h3 strong {
+  font-weight: normal !important;
+}
+
+/* news archive */
+#newsarchive {
+  padding-left: 0px; }
+
+#newsarchive h3 {
+  padding-left: 15px !important;
+  padding-bottom: 0px !important; }
+
+#newsarchive li {
+  background: none !important;
+  display: inline; 
+  margin-right: 10px;
+}
+
+/*end news archive*/
+#midCol h3 {
+  text-shadow: 0 0 1px #CCCCCC;
+   }
+
+.stindx {
+  display: inline-block;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  vertical-align: top;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  // height: 100px;
+  width: 330px !important; }
+
+.stindx div img {
+  padding-left: 5px; }
+
+div#midCol div.stindx p, div#midCol div.stindx p a {
+  display: inline;
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+/* Break outpanel */
+.panel_group {
+  background-color: #DDDDDD;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px; }
+
+/* 16th Dec 2010. Fixes for bulleted and ordered lists not displaying correctly */
+#midCol ol ul li {
+  // background: url("/media/keeleuniversity/styleassets/images/bulletFootGreen.png") no-repeat scroll 0 4px transparent;
+  // list-style: none outside none;
+  list-style: initial;
+  margin-left: 1.5em;
+  // padding: 0 0 5px 15px;
+  // padding-bottom: 0;
+  // padding-top: 0; 
+  padding: 5px 0px;
+}
+
+#midCol ol ul {
+  margin-bottom: 0px;
+  margin-top: 10px; }
+
+#midCol ul ol {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-left: 40px; }
+
+/* END BULLETED LIST FIX */
+/* code */
+.cb_pre {
+  display: block;
+  overflow-x: scroll;
+  padding: 15px 15px 30px;
+  position: relative; }
+
+.cb_pre {
+  background: none repeat scroll 0 0 #333333;
+  color: white;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 15px;
+  max-height: 450px;
+  overflow: auto;
+  padding: 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px; }
+
+.cb_pre p a {
+  color: #E1BD21 !important; }
+
+code {
+  font-family: Monaco,Courier,MonoSpace; }
+
+pre code {
+  color: white; }
+
+/* end code */
+del, .del {
+  text-decoration: line-through; }
+
+/*PGT Course Information */
+#midCol div.compressed_p p {
+  line-height: 1.4em;
+  background: url("/media/keeleuniversity/styleassets/images/bulletDotsGreen.gif") no-repeat scroll 0.2em 0.9em transparent;
+  border-top: medium none;
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 4px 0 3px 1em;
+  width: 160px; }
+
+/* side nav indicator */
+ul.subNav .currentbranch0 {
+  background: url("/media/keeleuniversity/styleassets/images/bulletDotsGrey.gif") no-repeat scroll 0.2em 1em transparent;
+  padding-left: 10px; }
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* One Column Body class for midCol */
+.oneCol {
+  width: 920px !important; }
+
+/* Style for image captions */
+.pictureleft_caption {
+  background-color: #F9F9F9;
+  border: 1px solid #CCCCCC;
+  padding: 3px;
+  font: 11px/1.4em Arial, sans-serif;
+  float: left; }
+
+.pictureleft_image {
+  border: 1px solid #CCCCCC;
+  vertical-align: middle;
+  margin-bottom: 3px; }
+
+.pictureright_caption {
+  background-color: #F9F9F9;
+  border: 1px solid #CCCCCC;
+  padding: 3px;
+  font: 11px/1.4em Arial, sans-serif;
+  float: right; }
+
+.pictureright_image {
+  border: 1px solid #CCCCCC;
+  vertical-align: middle;
+  margin-bottom: 3px; }
+
+/* RSS Subscribe */
+.rss_subscribe img {
+  float: left;
+  padding-right: 7px; }
+
+
+/* rss_shortlist start */
+
+/* RSS righ hand side short list */
+// .rss_shortlist {
+//   line-height: 12px; }
+
+.rss_shortlist li a {
+    line-height:21px !important;
+    display:block;
+    padding: .6em 0 .6em .5em;
+    margin:0px;
+}
+
+.rss_shortlist hr {
+    margin:0px;
+}
+
+.rss_shortlist li a:hover {
+    background-color:#B4DC9D ;
+}
+/* rss_shortlist end */
+
+/*News Short Hand AddThis Sharing*/
+.shortshare a {
+  border-bottom: none !important; }
+
+.shortshare {
+  padding-bottom: 4px; }
+
+/*Staff tabbed content CB 2010 */
+.show {
+  display: inline; }
+
+.hide {
+  display: none; }
+
+.yes {
+  display: inline; }
+
+.no {
+  display: none; }
+
+/*firefox jump bug */
+html {
+  overflow-y: scroll; }
+
+.inv {
+  display: none; }
+
+flvabst {
+  color: #333;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  float: left;
+  padding: 20px;
+  background: #98D9D5;
+  margin: 0.5em 0 1em 0; }
+
+#footright {
+  left: 25em;
+  position: relative;
+  top: -6.5em;
+  color: #D2E9C6 !important;
+  height: 1em; }
+
+#footright a {
+  // background: transparent url(/media/keeleuniversity/styleassets/images/bulletFootGreen.png) no-repeat scroll 0 4px;
+  color: #D2E9C6 !important;
+  padding: 0 0 5px 0px;
+  font-size: 9px; }
+
+#footright a:hover {
+  color: #FFFFFF !important;
+  font-size: 9px; }
+
+#makeit {
+  padding: 20px 0 20px 5px; }
+
+#staffprofile {
+  vertical-align: top !important; }
+
+#staffprofile td {
+  font-size: 12px; }
+
+#midCol td {
+  vertical-align: top; }
+
+#midCol img.left {
+  float: left;
+  margin-right: 10px; }
+
+#midCol img.right {
+  float: right;
+  margin-left: 10px; }
+
+#midCol strong {
+  font-weight: bold; }
+
+#midCol em {
+  font-style: italic; }
+
+div#midCol table.tablenoborder td, div#midCol table.tablenoborder {
+  border: none !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  vertical-align: top; }
+
+#midCol ol {
+  padding-left: 25px; }
+
+:focus {
+  outline: 0; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+#q:focus {
+  border: 2px solid #73A6FF !important; }
+
+/* Fix for users that have p tags within li tags */
+#midCol > ul > li > p, #midCol > ul > li > p > a {
+  font-size: 12px !important;
+  line-height: 1em !important;
+  padding: 0.2em 0 !important; }
+
+/* end fix cb 8th June 2010 */
+#midCol table#dtable, #midCol table#dtable p, #midCol table#dtable strong {
+  background: #d8dbc4;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  color: black !important; }
+
+#midCol table#dtable th {
+  font-weight: bold !important; }
+
+#midCol table#dtable p, #midCol table#ltable p {
+ /* line-height: 1em !important; */
+  padding: 0px !important; }
+
+#midCol table#ltable, #midCol table#ltable p, #midCol table#ltable strong {
+  background: #eff1de;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  color: black !important; }
+
+#midCol table#ltable th {
+  font-weight: bold !important; }
+
+/*
+#newsite a {
+color:#EE5113;
+}
+
+#newsite a:active {
+color:#555555;
+
+}
+
+#newsite {
+background:  url(/media/keeleuniversity/styleassets/images/bulletsBlockLinks.gif) no-repeat scroll 0 4px;
+}
+*/
+#scl-form textarea {
+  background: none repeat scroll 0 0 !important;
+  border: 1px #777777 solid !important;
+  float: left;
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+  width: 350px; }
+
+.minutes {
+  display: inline-block;
+  padding: 0 20px 0 0; }
+
+/* Remove padding and margin */
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  // @include single-transition(all, .1s, ease-out); // Feels too slow and laggy so removing this compass include
+  text-decoration: none;
+  /*color: DarkBlue;*/
+  color: #555555; }
+
+a:active {
+  /*color: DarkBlue;*/
+  color: #555555; }
+
+a:visited {
+  /*color: DarkBlue;*/
+  color: #000; }
+
+a:hover {
+  color: #000; }
+
+/* midCol bold for links */
+div#midCol a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: normal;
+  border-bottom: dotted thin #272449; /* Original was #e0e0e0 but has been changed by request of Dave Emley 23 MAy 2013 */
+  
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  // -o-transition:.5s;
+  // -ms-transition:.5s;
+  // -moz-transition:.5s;
+  // -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  // transition:.5s;
+}
+
+/* fix breadcrumb jolting */
+// html body.tMidImage div#pageSurround div#content div#fadeCorner div#contentPage div#midCol ul.breadCrumbs li a {
+//     -moz-transition: none;
+//     -webkit-transition: none;
+//     -o-transition: color 0 ease-in;
+//     transition: none;
+// }
+
+.breadCrumbs li:last-of-type a {
+    color:#5a8f3b !important;
+}
+
+div#midCol a:active {
+  color: #555555;
+  // font-weight: bold;
+  border-bottom: thin dotted 1px #555555; }
+
+div#midCol a:visited {
+  color: #555555;
+  font-weight: bold;
+  border-bottom: thin dotted 1px #555555; }
+
+div#midCol a:hover {
+ /* color: #000; */
+color:green;
+background:white #555555;
+border-bottom: thin dotted #555555 ;
+   }
+
+/* Class for clearing floats */
+.clear {
+  clear: both; }
+
+/* Remove border around linked images */
+img {
+  border: 0; }
+
+/* Removes styling from all list items */
+ul, li {
+  list-style: none; }
+
+  /* fixes width for floated lists */
+#midCol ul{
+    word-wrap: break-word;
+  }
+
+#accessibility, #pageDescription, #branding p, #pageInfo {
+  display: none; }
+
+p {
+  padding: 1em 0 1em 0; }
+
+/*preloader */
+div#loader td {
+  border: none;
+  float: right; }
+
+/* Vacancy tables */
+#midCol table.jobvac th, #midCol table.jobvac, #midCol table.jobvac td {
+  border: thin solid #CCCCCC;
+  padding-left: 10px; }
+
+#midCol table.jobvac tr th {
+  border: solid thin;
+  background: #CCCCCC;
+  font-weight: bold; }
+
+#midCol table.jobvac {
+  font-size: 1.1em; }
+
+#midCol table.jobvac tbody tr:hover {
+  background: #EAEAEA; }
+
+#midCol table.jobvac hr {
+  line-height: 200px !important;
+  margin-bottom: 0.4em;
+  margin-top: 1em; }
+
+
+
+.tablestripes tr:nth-child(odd)   { background-color:#eee; }
+.tablestripes tr:nth-child(even)    { background-color:#fff; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Finance Buyers Guide Table */
+#midCol table.fin_table th, #midCol table.fin_table, #midCol table.fin_table td {
+  border: thin solid #CCCCCC;
+  padding-left: 10px; }
+
+#midCol table.fin_table tr th {
+  border: solid thin;
+  background: #CCCCCC;
+  font-weight: bold; }
+
+#midCol table.fin_table, #midCol table.fin_table p, #midCol table.fin_table a {
+  font-size: 1em !important; }
+
+#midCol table.fin_table tbody tr:hover {
+  background: #EAEAEA; }
+
+.tsubheader {
+  background: #99cc99; }
+
+.sprite {
+  display: block; }
+
+.sprite a, .sprite p {
+  font-size: 1.1em; }
+
+.spritetext {
+  display: inline;
+  position: absolute;
+  margin-top: 12px;
+  padding-left: 8px;
+  width: 160px; }
+
+/*for items */
+.sprite img.facebook {
+  width: 50px;
+  height: 50px;
+  background: url(/media/keeleuniversity/styleassets/images/socneticons/socsprite.png);
+  background-position: 0px 2px; }
+
+.sprite img.twitter {
+  width: 50px;
+  height: 50px;
+  background: url(/media/keeleuniversity/styleassets/images/socneticons/socsprite.png);
+  background-position: 0px -48px; }
+
+.sprite img.linkedin {
+  width: 122px;
+  height: 50px;
+  background: url(/media/keeleuniversity/styleassets/images/socneticons/socsprite.png);
+  background-position: 0px -98px; }
+
+.sprite img.ytube {
+  width: 122px;
+  height: 50px;
+  background: url(/media/keeleuniversity/styleassets/images/socneticons/socsprite.png);
+  background-position: 0px -148px; }
+  
+/* =Body
+*******************************************************************************************************************/
+body {
+  background: url(/media/keeleuniversity/styleassets/images/backgPage.jpg) 0 0 repeat-x #dfd8dc;
+  font: 62.5%/1.6em Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+#pageSurround {
+  text-align: left;
+  width: 1013px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#fadeCorner {
+  float: left;
+  // background: url(/media/keeleuniversity/styleassets/images/fadeCornerBlue.jpg) 7px bottom no-repeat;
+}
+
+/* =Header
+*******************************************************************************************************************/
+#header {
+  background: url(/media/keeleuniversity/styleassets/images/background.jpg) 0 0 no-repeat white;
+  height: 96px !important;
+  padding: 32px 24px 0px 24px;
+  margin: 0px 0 0px 0px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #header {
+    padding: 32px 24px 5px 24px;
+     } }
+.homeLink {
+  display: block;
+  float: left;
+  position: relative;
+  width: 120px;
+  /*	padding: 0 0 0 20px; */
+  padding: 0px;
+  height: 96px;
+  bottom: 10px; }
+
+.homeLink strong {
+  display: block;
+  height: 0px;
+  margin-left: -5000px;
+  overflow: hidden; }
+
+/* =Site Tools
+*******************************************************************************************************************/
+	/*
+ul.siteTools {
+	display: block;
+	float: left;
+	/* original width: 320px; */
+	/* width: 430px;
+	padding-top: 6px;
+	height: 2em;
+	font-size:1.1em;
+	padding-left: 23px;
+}
+*/
+ul.siteTools {
+  display: block;
+  float: left;
+  font-size: 1.1em;
+  height: 2em;
+  padding-left: 195px;
+  padding-top: 6px;
+  width: 280px; }
+
+ul.siteTools li {
+  // border-right: #d3d3d3 1px solid;
+  padding: 0 10px 0 10px;
+  display: inline; }
+
+ul.siteTools li.last {
+  border: none;
+  padding: 0 0 0 10px; }
+
+ul.siteTools li.first {
+  padding: 0 10px 0 0; }
+
+ul.siteTools li a {
+  color: #555;
+  font-size: 12px; }
+
+ul.siteTools li a:hover {
+  color: #000; }
+
+/* =Search Site
+*******************************************************************************************************************/
+#search {
+  margin: -3px 0 0 0;
+  padding: 0;
+  width: 280px;
+  float: right; }
+
+#schField, #schGo {
+  display: inline; }
+
+#schField input {
+  width: 150px;
+  margin: 0;
+  padding: 2px !important;
+  border: none !important;
+  font-size: 1.6em !important;
+  background: #dddddd; }
+
+#schGo input {
+  cursor: pointer;
+  background: url(/media/keeleuniversity/styleassets/images/buttonGo.gif) 0 0 no-repeat;
+  border: none;
+  display: inline;
+  color: #ccc;
+  padding: .4em 0 29px 0;
+  margin: -2px 0 0 0px;
+  width: 30px;
+  height: 28px; }
+
+#search label, #search legend {
+  display: none; }
+
+/* =Course Search
+*******************************************************************************************************************/
+#midCol form.coursePanel {
+  float: right;
+  margin: 3px 0 0 0;
+  padding: 10px 10px 5px 30px;
+  width: 45%; }
+
+#midCol form.coursePanel * {
+  font-size: 12px !important; }
+
+#midCol form.coursePanel label {
+  display: none; }
+
+#midCol form.coursePanel select, form.coursePanel input {
+  margin: 0 0 4px 0;
+  padding: 0 0 0 4px; }
+
+#midCol form.coursePanel select {
+  width: 190px;
+  padding: 0;
+  background: #fff; }
+
+#midCol form.coursePanel {
+  padding: 20px 0 0 0; }
+
+#findCourse {
+  background: url(/media/keeleuniversity/styleassets/images/findCoursePanel.jpg) right 15px no-repeat;
+  display: block;
+  margin: 0 0 2em 0; }
+
+#findCourse p {
+  width: 220px; }
+
+#findCourse h3, #findCourse h4 {
+  width: 45%; }
+
+form.findCourse legend {
+  font-size: 1.3em;
+  margin: 0 0 4px 0; }
+
+form.findCourse #courseField input {
+  display: inline;
+  float: left;
+  width: 140px;
+  font-size: 2em;
+  color: #444; }
+
+form.findCourse #courseGo input {
+  background: url(/media/keeleuniversity/styleassets/images/buttonGo.gif) 0 0 no-repeat;
+  border: none;
+  display: inline;
+  color: #ccc;
+  padding: 0em 0 .2em 0;
+  margin: 0 0 0 2px;
+  width: 30px;
+  height: 30px; }
+
+#searchButtons {
+  padding: 8px 0 0 5px;
+  clear: right;
+  float: right;
+  text-align: right;
+  width: 430px; }
+
+#searchButtons form {
+  float: right;
+  text-align: right;
+  width: 270px;
+  display: block;
+  padding: 0 0 0 0; }
+
+ul.blockLinks a {
+  display: block;
+  padding: 0 0 0 10px;
+  background: url(/media/keeleuniversity/styleassets/images/bulletsBlockLinks.gif) 0 5px no-repeat;
+  color: #ccc; }
+
+ul.blockLinks a:hover {
+  background: url(/media/keeleuniversity/styleassets/images/bulletsBlockLinks.gif) 0 5px no-repeat;
+  color: #fff; }
+
+.tLargeImage ul.blockLinks a {
+  background: url(/media/keeleuniversity/styleassets/images/bulletsBlockLinks.gif) 0 4px no-repeat;
+  color: #ededed;
+  font-size: 1.2em; }
+
+.tLargeImage ul.blockLinks a:hover {
+  color: #fff; }
+
+.tMidImage ul.blockLinks {
+  margin: 10px 0 0 0; }
+
+.tMidImage ul.blockLinks a {
+  padding: 0 0 0 10px;
+  color: #666666;
+  background: url(/media/keeleuniversity/styleassets/images/bulletsBlockLinksWhite.gif) 0 5px no-repeat; }
+
+.tMidImage ul.blockLinks a:hover {
+  color: #000; }
+
+/* =TOP NAVIGATION
+*******************************************************************************************************************/
+ul.topNav {
+  font-size: 11px;
+  width: 710px;
+  padding: 0 0 0 0;
+  margin: 23px 0 0 0;
+  float: left; }
+
+ul.topNav li {
+  float: left;
+  display: inline; }
+
+ul.topNav > li > a {
+  color: #fff !Important;
+  height: 26px;
+  float: left;
+  // font-weight: bold; Make Muli less blurred!
+  display: block;
+  padding: 14px 12px 0em 12px;
+  // background: url(/media/keeleuniversity/styleassets/images/backgTopnav.jpg) top left repeat-x; 
+  line-height: 14px;
+}
+
+body:first-of-type ul.topNav > li > a {
+  padding: 14px 14px 0em 12px; }
+
+/*Safari fix - W3C validation will fail ! */
+ul.topNav li.last {
+  width: 10px;
+  height: 40px;
+  // background: url(/media/keeleuniversity/styleassets/images/backgTopnavLast.jpg) top right repeat-x;
+}
+
+body:first-of-type ul.topNav li.last {
+  width: 13px; }
+
+/*Safari fix - W3C validation will fail ! */
+html:first-child ul.topNav li.last {
+  width: 6px; }
+
+/*Opera fix  ! */
+ul.topNav li.first {
+  width: 6px;
+  height: 40px;
+  // background: url(/media/keeleuniversity/styleassets/images/backgTopnavFirst.jpg) top left repeat-x; 
+}
+
+ul.topNav li.noLine a {
+  padding: 14px 18px 0em 19px;
+  // background: url(/media/keeleuniversity/styleassets/images/backgTopnavNoline.jpg) top left repeat-x; 
+}
+
+ul.topNav li.current a {
+  padding: 14px 4px 0 12px;
+  // background: url(/media/keeleuniversity/styleassets/images/topNavOverlay.png) #68a841 no-repeat 0 0; 
+}
+
+ul.topNav li.current a:hover {
+  color: #000;
+  // background: url(/media/keeleuniversity/styleassets/images/topNavOverlay.png) #68a841 no-repeat 0 0; 
+}
+
+ul.topNav li a:hover {
+  color: #fff;
+  // background: url(/media/keeleuniversity/styleassets/images/backgTopnavOver.jpg) 0 2px repeat-x; 
+}
+
+#content {
+  width: 1013px;
+  // OLD FADE ON EDGES background: url(/media/keeleuniversity/styleassets/images/page_backg.png) top center repeat-y;
+  float: left;
+}
+
+#contentPage {
+  padding: 0 24px 0 24px; }
+
+/* T4 - Current Branch */
+ul.topNav li span {
+  color: #fff !Important;
+  height: 26px;
+  float: left;
+  position: relative;
+  font-weight: bold;
+  display: block;
+  padding: 14px 12px 0em 12px;
+  // background: url(/media/keeleuniversity/styleassets/images/topNavOverlay.png) #68a841 no-repeat 0 0;
+}
+
+/*correction of above. CB 10th August 2009. Leaving T4 Current Branch alone just in case it affects anything else*/
+div#header ul.topNav li span.currentbranch0 a {
+  padding: 0px 0px 0px 0px; }
+
+div#header ul.topNav li span.currentbranch0 a:visited {
+  color: white; }
+
+/* End CB tweak 20.10.2010 */
+b.currentCorner {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 10px;
+  display: inline;
+  // background: url(/media/keeleuniversity/styleassets/images/topNavOverlayRight.png) #68a841 top right no-repeat; 
+}
+
+ul.topNav li span a {
+  padding: 0px;
+  display: inline;
+  background: none; }
+
+ul.topNav li span a:hover {
+  padding: 0px;
+  display: inline;
+  background: none; }
+
+/* =SUB NAVIGATION
+*******************************************************************************************************************/
+#leftCol h3, #rightCol h3 {
+  color: #437626;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1.5em 0 0.5em 0; }
+
+/* midCol h3 is given it's own padding height. Basis taken from leftCol and rightCol h */
+#midCol h3 {
+  color: #437626;
+  /* font-size: 1.5em; */
+  font-size: 17px;
+  font-weight: normal; /* orig bold in headscape 1.0 CB 2014 */
+  padding: 0.5em 0 0.5em 0; }
+
+/* alternative h3 block effect. Currently only needed in green 18.01.2012 CB */
+#midCol h3.block_header {
+  background: none repeat scroll 0 0 #5A8F3B;
+  color: #FFFFFF;
+  display: block;
+  margin: 0px 0px 10px 0px;
+  padding: 7px 7px 7px 13px; }
+
+/* # Level - 1 */
+ul.subNav li a {
+  display: block;
+  color: #000;
+  padding: .6em .6em .6em 3px;
+  font-size: 1.2em;
+  font-weight: normal; /* originally bold in headscape CB */
+  border-top: 1px solid #dfdfdf; }
+
+ul.subNav li a:hover {
+  background: #eee; }
+
+ul.subNav li span {
+  display: block;
+  background: none;
+  color: #000;
+  padding: .6em .6em .6em 3px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-top: 1px solid #dfdfdf; }
+
+ul.subNav li span a {
+  border: none;
+  padding: 0px;
+  // font-size: 12px; 
+}
+
+ul.subNav li span a:hover {
+  background: none !important; }
+
+/* ## Level - 2 */
+ul.subNav li ul {
+  padding-bottom: 5px; }
+
+ul.subNav li ul li a {
+  display: block;
+  background-image: url(/media/keeleuniversity/styleassets/images/bulletSubnav2.gif);
+  background-position: 3px 5px !important;
+  background-repeat: no-repeat;
+  color: #000;
+  padding: .1em 0 .1em 12px;
+  // font-size: 1.2em;
+  font-weight: normal;
+  border-top: none; }
+
+ul.subNav li ul li a:hover {
+  background: #eee !important; }
+
+ul.subNav li ul li span {
+  display: block;
+  background-image: url(/media/keeleuniversity/styleassets/images/bulletSubnav.gif);
+  background-position: 3px 5px !important;
+  background-repeat: no-repeat;
+  color: #000;
+  padding: .1em 0 .1em 12px;
+  // font-size: 1.2em;
+  font-weight: bold;
+  border-top: none; }
+
+ul.subNav li ul li span a {
+  background: none !important;
+  border: none;
+  padding: 0px;
+  font-weight: bold;
+  // font-size: 1.1em; 
+}
+
+ul.subNav li ul li span a:hover {
+  background: none !important; }
+
+/* ### Level - 3 */
+ul.subNav li ul li ul li a {
+  display: block;
+  background-image: url(/media/keeleuniversity/styleassets/images/bulletSubnav.gif);
+  background-position: 13px 5px !important;
+  background-repeat: no-repeat;
+  color: #000;
+  padding: .1em 0 .1em 22px;
+  // font-size: 1.2em;
+  font-weight: normal;
+  border-top: none; }
+
+ul.subNav li ul li ul li a:hover {
+  background: #eee; }
+
+ul.subNav li ul li ul li span {
+  display: block;
+  background-image: url(/media/keeleuniversity/styleassets/images/bulletSubnav.gif);
+  background-position: 13px 5px !important;
+  background-repeat: no-repeat;
+  color: #000;
+  padding: .1em 0 .1em 22px;
+  // font-size: 1.2em;
+  font-weight: bold;
+  border-top: none; }
+
+ul.subNav li ul li ul li span a {
+  background: none;
+  border: none;
+  padding: 0px;
+  font-weight: bold;
+  // font-size: 1.1em; 
+}
+
+/* #### Level - 4 */
+ul.subNav li ul li ul li ul li a {
+  display: block;
+  background-image: url(/media/keeleuniversity/styleassets/images/bulletSubnav.gif);
+  background-position: 23px 5px !important;
+  background-repeat: no-repeat;
+  color: #000;
+  padding: .1em 0 .1em 32px;
+  // font-size: 1.2em;
+  font-weight: normal;
+  border-top: none; }
+
+ul.subNav li ul li ul li ul li a:hover {
+  background: #eee; }
+
+ul.subNav li ul li ul li ul li span {
+  display: block;
+  background-image: url(/media/keeleuniversity/styleassets/images/bulletSubnav.gif);
+  background-position: 23px 5px !important;
+  background-repeat: no-repeat;
+  color: #000;
+  padding: .1em 0 .1em 32px;
+  // font-size: 1.2em;
+  font-weight: bold;
+  border-top: none; }
+
+ul.subNav li ul li ul li ul li span a {
+  background: none !important;
+  border: none;
+  padding: 0px;
+  font-weight: bold;
+  // font-size: 1.1em; 
+  display: inline; }
+
+/*
+ul.subNav li ul li a {
+	background: url(/media/keeleuniversity/styleassets/images/bulletSubnav.gif) 3px 5px no-repeat;
+	display: block;
+	color: #000;
+	padding: .1em 0 .1em 12px;
+	font-size: 1.1em;
+	font-weight: normal;
+	border-top: none;
+}
+ul.subNav li ul li span { font-weight: bold; font-size: 1.1em}
+ul.subNav li ul li span a { font-weight: bold;}
+
+ul.subNav li ul li ul li a {
+	background-position: 14px 1px !important;
+	display: block;
+	color: #000;
+	padding: .1em 0 .1em 26px;
+	font-size: 1.1em;
+	border-top: none;
+}
+ul.subNav li ul li ul li span { 
+	font-weight: bold; 
+	display: block;
+	color: #000;
+	padding: .1em 0 .1em 26px;
+	font-size: 1.1em;
+	border-top: none;
+}
+ul.subNav li ul li ul li span a { }
+
+ul.subNav li ul li ul li a {}
+ul.subNav li ul li ul li span {}
+ul.subNav li ul li ul li span a {}
+*/
+/* =BREADCRUMBS
+*******************************************************************************************************************/
+#midCol ul.breadCrumbs {
+  font-size: .9em;
+  padding: 0 0 15px 0;
+  border-bottom: 2px dotted #ddd; }
+
+#midCol ul.breadCrumbs {
+  border-bottom: none;
+  padding: 0 0 0 0;
+  margin: 0 0 10px 0; }
+
+.landing #midCol ul.breadCrumbs {
+  margin: 15px 0 10px 0; }
+
+#midCol ul.breadCrumbs li {
+  background: none;
+  display: inline; }
+
+#midCol ul.breadCrumbs li.first {
+  display: inline;
+  margin: 0;
+  padding: 0; }
+
+#midCol ul.breadCrumbs li a {
+  font-weight: bold; }
+
+#midCol ul.breadCrumbs li {
+  font-weight: normal;
+  font-size: 1.1em;
+  padding: 0 0 .5em 0em; }
+
+#midCol ul.breadCrumbs li.first {
+  padding-left: 0em; }
+
+/* =GETTING STARTED NAV
+*******************************************************************************************************************/
+.tMidImage #rightCol {
+  margin: 2em 0 0 0; }
+
+.landing #midCol {
+  margin: 8px 0 20px 0; }
+
+#rightCol .rightLinks h3 {
+  margin: .5em 0 0 0;
+  // padding: .5em 0 .4em .5em;  commenting out for golive
+  color: #fff;
+  background: #5a8f3b url(/media/keeleuniversity/styleassets/images/rightTitleOverlay.png) no-repeat scroll 0 0; }
+
+#rightCol .related h3 {
+  // color: #63a23c;
+  // margin: 2em 0 .5em 0;
+  // font-size: 1.3em;
+  // font-weight: bold;
+  // padding: 0em;
+  // background: none !important;
+}
+
+.liHighlight, .liHighlight a:visited {
+  background: #B4DC9D !important;
+  color: #444444 !important;
+  border-top: 1px dotted #5A8F3B !important; }
+
+.liHighlight a:hover {
+  background: #5A8F3B !important;
+  color: #000 !important;
+  border-top: 1px dotted #5A8F3B !important; }
+
+// .rightLinks ul {
+//   background: url(/media/keeleuniversity/styleassets/images/rightLinksOverlay.png) #d3ffc5; }
+
+// .related ul li {
+//   font-size: 12px; }
+
+.rightLinks ul li a {
+  display: block;
+  padding: .6em 0 .6em .5em;
+  font-size: 1.30em;
+  font-weight: normal; /* bold */
+  border-top: 1px solid #b4daa3;
+  color: #444; }
+
+.rightLinks ul li a:hover {
+  background: #B4DC9D; }
+
+.rightLinks ul li ul li a {
+  display: block;
+  background: url(/media/keeleuniversity/styleassets/images/bulletDotsGreen.gif) 9px 0.9em no-repeat;
+  font-size: 12px;
+  font-weight: normal;
+  border-top: none;
+  padding: 3px 0 3px 20px; }
+
+.rightLinks ul li ul li a:hover {
+  background: #efefef; }
+
+.related ul li {
+  display: block;
+  background: url(/media/keeleuniversity/styleassets/images/bulletDotsGreen.gif) 0.2em 0.7em no-repeat;
+  font-size: 12px;
+  font-weight: normal;
+  border-top: none;
+  padding: 4px 0 3px 1em; }
+
+.related ul li a:hover {
+  background: #eee; }
+
+.related {
+  padding-bottom: 1em; }
+
+/* =IMAGE BLOCK
+*******************************************************************************************************************/
+#imgBlock {
+  vertical-align: top;
+  width: 965px;
+  padding: 0 24px 0 24px; }
+
+.tMidImage #imgBlock {
+  height: 17.5em; }
+
+// #imgBlockLeft {
+//   height: 24.1em;
+//   width: 220px;
+//   float: left;
+//   padding: 0;
+//   margin: 0; }
+
+// .tLargeImage #imgBlockLeft {
+//   background: #8bc966; }
+
+// #imgBlockLeft img {
+//   margin: 0 0 -4px 0;
+//   width: 22em;
+//   height: 15em; }
+
+// .tMidImage #imgBlockLeft {
+//   height: 17.5em; }
+
+// #imgBlockLeft ul {
+//   background: url(/media/keeleuniversity/styleassets/images/imgLeftLargeBottomOverlay.png) #5a8f3b bottom left no-repeat;
+//   color: #fff;
+//   padding: 25px 0 18px 20px; }
+
+// #imgBlockLeft form label {
+//   display: none; }
+
+// #imgBlockLeft form {
+//   padding: 60px 20px 38px 20px;
+//   width: 180px;
+//   background: url(/media/keeleuniversity/styleassets/images/imgLeftLargeTopOverlay.png) #82c65a top left; }
+
+// body:first-of-type #imgBlockLeft form {
+//   padding: 64px 20px 38px 20px; }
+
+/*Safari fix - W3C validation will fail ! */
+// #imgBlockLeft strong {
+//   display: block;
+//   width: 250px;
+//   font-size: 10px;
+//   font-weight: bold;
+//   color: #000; }
+
+// #imgBlockLeft h2 {
+//   padding: 1.4em 0 0 1em;
+//   width: 250px;
+//   clear: left;
+//   color: #fff;
+//   font-size: 16px;
+//   font-weight: bold; }
+
+#imgBlockMid h1 {
+  width: 600px;
+  font-size: 3.5em !important;
+  position: relative;
+  top: -2.5em;
+  left: 22px; // needed for old Keele website style
+  z-index: 101;
+  padding: .5em 0 .5em 0;
+  font-weight: normal; }
+
+#imgBlockMid h1 strong {
+  font-weight: bold; }
+
+.tLargeImage #imgBlockMid h1 {
+  top: 5em; }
+
+/* Right side of image block ******************************************/
+#imgBlockRight {
+  text-align: right;
+  margin-top: -170px;
+  padding-right: 20px;
+  float: right;
+  /*	width: 200px; */
+  width: 220px;
+  position: relative;
+  z-index: 210; }
+
+.tLargeImage #imgBlockRight {
+  margin-top: -290px; }
+
+#imgBlockRight h2 {
+  font-weight: normal;
+  font-size: 2.7em;
+  color: #000;
+  padding: 10px 0 10px 0; }
+
+#imgBlockRight h2 strong {
+  font-weight: bold; }
+
+#imgBlockRight h3 {
+  font-weight: normal; /* bold */
+  font-size: 1.4em;
+  padding: 4px 0 0px 0; }
+
+#imgBlockRight p {
+  padding: 4px 0 0px 0; }
+
+#imgBlockRight h4.playVideo {
+  background: url(/media/keeleuniversity/styleassets/images/videoPlay.png) right top no-repeat;
+  padding: 6px 27px 4px 0;
+  margin: 15px 0 4px 0;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+#imgBlockRight h4.noVideoIcon {
+  padding: 6px 27px 4px 0;
+  margin: 15px 0 4px 0;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+#imgBlockRight h4 {
+  padding: 6px 27px 4px 0;
+  margin: 15px 0 4px 0;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+.tMidImage #imgBlockMid h1 {
+  font-size: 2.3em !important;
+  position: relative;
+  // left: 22px;
+  z-index: 5;
+  padding: .8em 0 .5em 0;
+  font-weight: normal; }
+
+.tMidImage h2 {
+  padding: 1.8em 0 0 1em;
+  color: #fff;
+  font-size: 1.7em; }
+
+#imgBlockMid {
+  width: 745px;
+  height: 25em;
+  padding: 0;
+  float: right;
+  position: relative; }
+
+.tMidImage #imgBlockMid {
+  height: 17.5em; }
+
+#imgBlockMid span.mapOverlay {
+  background: url(/media/keeleuniversity/styleassets/images/mapOverlay.png) top right no-repeat;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  width: 745px;
+  height: 25em; }
+
+#imgBlockMid span.facultyOverlay {
+  background: url(/media/keeleuniversity/styleassets/images/overlayFaculty.png) top right no-repeat;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  width: 745px;
+  height: 25em; }
+
+span.landingOverlay {
+  background: url(/media/keeleuniversity/styleassets/images/landingOverlay.png) top right no-repeat;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  width: 745px;
+  height: 17.5em; }
+
+span.banner_NoRightHandFade {
+  background: url(/media/keeleuniversity/styleassets/images/landingOverlaynoRHS.png) top right no-repeat;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  width: 745px;
+  height: 17.5em; }
+
+html body.tMidImage div#pageSurround div#content div#fadeCorner div#imgBlock.clearfix div#imgBlockMid h1.LongTitleSmallText_TwoLines {
+  bottom: 700px !important;
+  font-size: 17px !important;
+  line-height: 18px;
+  padding: 0;
+  top: -50px;
+  width: 460px;
+  font-weight: bold; }
+
+#leftCol, #midCol, #rightCol {
+  float: left; }
+
+#leftCol {
+  clear: left;
+  width: 220px; }
+
+#rightCol {
+  width: 220px; }
+
+
+/* =CENTRAL COLUMN
+*******************************************************************************************************************/
+#midCol {
+  display: block;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 475px;
+  color: #1f1f1f;
+  margin-bottom: 30px; }
+
+.twoColsNews #midCol {
+  width: 720px;
+  padding-right: 0; }
+
+.twoColsNews #midCol ul.breadCrumbs {
+  margin: 2.7em 0 0 0; }
+
+.twoCols #midCol {
+  width: 690px; }
+
+/********************************************************************/
+#midColLeft {
+  display: block;
+  width: 335px;
+  color: #1f1f1f;
+  margin-bottom: 30px;
+  float: left; }
+
+#midColRight {
+  display: block;
+  width: 335px;
+  color: #1f1f1f;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  float: left; }
+
+#midColLeft a .imgListing {
+  width: 335px; }
+
+#midColRight a .imgListing {
+  width: 335px; }
+
+
+
+
+#midColLeft h3 {
+  padding: 1em 0 0.5em; }
+
+#midColLeft h3, #midColRight h3 {
+  color: #437626;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 1.5em 0 0.5em; }
+/* Feature box Expandable Hacks */
+// .fbexp .toggler-closed:hover {
+// background: none !important;
+// }
+// .fbexp {
+// background: url(none) !important;
+// }
+
+
+.fbexp {
+  background-color: #f1f1f1;
+}
+
+#midCol .fbexp:hover{
+    background-color:#e0e0e0 !important;   
+}
+
+html body.tMidImage div#pageSurround div#content div#fadeCorner div#contentPage div#midCol a.toggler {
+/* Override the default animations */
+ -o-transition:0s;
+  -ms-transition:0s;
+  -moz-transition:0s;
+  -webkit-transition:0s;
+  /* ...and now for the proper property */
+  transition:0s;
+}
+
+/* End Feature box Expandable Hacks */
+
+/***********************************************************************/
+/*** Simple Columns***/
+.simpleLeft {
+  margin: 1em 0 0 0;
+  float: left;
+  clear: left;
+  width: 50%; }
+
+.simpleRight {
+  float: left;
+  margin: 1em 0 0 0;
+  width: 49%; }
+
+.homeLeft {
+  margin: 1em 0 0 0;
+  float: left;
+  clear: left;
+  width: 50%; }
+
+#midCol .homeLeft p, #midCol .homeRight p {
+  padding-top: 0;
+  line-height: 14px; }
+
+#midCol div.homeLeft span.imgListing strong, #midCol div.homeRight span.imgListing strong {
+  margin-left: 0px; }
+
+#midCol div.homeLeft span.imgListing .curvedImage, #midCol div.homeRight span.imgListing .curvedImage {
+  margin: 0px; }
+
+#midCol .homeLeft .imgListing, #midCol .homeRight .imgListing {
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding;
+  background: transparent url(/media/keeleuniversity/styleassets/images/hr_fadeSmall.jpg) no-repeat scroll left bottom;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 10px 4px 3px; }
+
+#midCol div.homeLeft span.imgListing:hover, #midCol div.homeRight span.imgListing:hover {
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding;
+  background: transparent url(/media/keeleuniversity/styleassets/images/hr_fade_overSmall.jpg) no-repeat scroll left bottom;
+  padding: 10px 4px 3px; }
+
+.homeLeft em, .homeRight em {
+  font-style: normal;
+  line-height: 6px;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0 !important;
+  font-weight: bold;
+  color: #656565; }
+
+#midCol .homeLeft i, #midCol .homeRight i {
+  line-height: 10px;
+  margin: 0;
+  padding: 0 !important;
+  display: block;
+  color: #5a8e3b;
+  font-size: 1.1em;
+  font-style: normal; }
+
+#midCol ul.homeLeft li a p, #midCol ul.homeRight li a p {
+  line-height: 1.2em;
+  margin: 0;
+  padding: 4px 0 0 0;
+  display: block;
+  font-size: 1em; }
+
+.homeLeft img, .homeRight img {
+  width: 50px !important;
+  height: 50px !important;
+  padding: 2px 10px 7px 0;
+  clear: left;
+  float: left; }
+
+/* extra class to override image resize for columns i.e. homeLeft and Right but no resize */
+#midCol .noresizehomeLeft img, #midCol .noresizehomeRight img {
+  width: 90px !important;
+  height: 90px !important;
+  padding: 2px 10px 7px 0;
+  clear: left;
+  float: left; }
+
+#midCol .homeLeft li, #midCol .homeRight li {
+  background: none;
+  padding: 0 0 7px 0;
+  margin: 0; }
+
+#midCol h3.colHome {
+  background: url(/media/keeleuniversity/styleassets/images/lineBlueFade.jpg) 0 30px no-repeat; }
+
+.homeRight {
+  margin: 1em 0 0 0;
+  float: left;
+  width: 49%; }
+
+.homeLeft .curvedImage span.curveBr, .homeRight .curvedImage span.curveBr {
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding;
+ // background: transparent url(/media/keeleuniversity/styleassets/images/squareOverlay50px.png) repeat scroll right bottom;
+ // added this below for modernizr IE fix. 18.2.2014
+  bottom: 0;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  width: 54px;
+  z-index: 2; }
+
+.no-borderradius .homeLeft .curvedImage span.curveBr, .homeRight .curvedImage span.curveBr {
+  background: transparent url(/media/keeleuniversity/styleassets/images/squareOverlay50px.png) repeat scroll right bottom;
+}
+
+.curvedImage img {
+    // time to get rid of the image overlay corners (see above commented out)
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+// Fix for the jQuery I wrote to wrap around Feature boxes that only have one link
+// The problem was that the two column feature boxes started stretching the full
+// width of the page and overlapping one another
+// The jQuery now adds a class to the wrapped ahref and this is it:
+#content a.fixfeat .imgListing {
+    width:95%; 
+}
+.fixfeat, .fixfeat i {
+    cursor:pointer;
+}
+
+
+
+#midCol ul li p {
+  line-height: 1.3em;
+  padding-top: 0; }
+
+/***********************************************************************/
+/*stated elsewhere*/
+/*#midCol h3 {
+	padding: 0.5em 0 0.5em 0;
+}*/
+#midCol ul.listing.search h3 {
+  padding: 0.5em 0 0.5em 0; }
+
+.news {
+  float: left;
+  margin-right: 15px;
+  margin-top: 20px; }
+
+#midCol h4 {
+  padding: 10px 0 10px 0;
+  margin: 0;
+  font-size: 13px;
+  color: #006600;
+  font-weight: bold; }
+
+#midCol h5 {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 6px 0px 6px 0px;
+}
+
+#midCol h6 {
+  font-weight: bold; }
+
+#midCol .newsDate {
+  color: #6c9b51;
+  // font-size: 10px;
+  font-weight: bold; }
+
+.homeNews {
+  margin: 1em 0 0 0;
+  float: left;
+  clear: left;
+  width: 50%; }
+
+#midCol .homeNews p, #midCol .homeEvents p {
+  padding-top: 0;
+  line-height: 14px;
+  margin-left: 60px;
+  line-height:20px;
+}
+
+.homeNews em, .homeEvents em {
+  font-style: normal;
+  line-height: 6px;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0 !important;
+  font-weight: bold;
+  color: #656565; }
+
+.homeNews i, .homeEvents i {
+  line-height: 2em /*10px*/;
+  margin: 0;
+  padding: 0 !important;
+  display: block;
+  color: #5a8e3b;
+  font-size: 0.9em;
+  font-style: normal; }
+
+  div.homeNews ul li a, div.homeEvents ul li a {
+  font-size:.9em; }
+
+#midCol ul.homeNews li a p, #midCol ul.homeEvents li a p {
+  line-height: 1.2em;
+  margin: 0;
+  padding: 4px 0 0 0;
+  display: block;
+  font-size: 1em; }
+
+.homeNews img, .homeEvents img {
+  width: 50px !important;
+  height: 50px !important;
+  padding: 2px 10px 7px 0;
+  clear: left;
+  float: left; }
+
+#midCol .homeNews li, #midCol .homeEvents li {
+  background: none;
+  padding: 0 0 7px 0;
+  margin: 0; }
+
+#midCol h3.colHome {
+  background: url(/media/keeleuniversity/styleassets/images/lineBlueFade.jpg) 0 30px no-repeat; }
+
+.homeEvents {
+  margin: 1em 0 0 0;
+  float: left;
+  width: 50%; }
+
+/* =LANDING LINKS
+*******************************************************************************************************************/
+.imgListing {
+  /*	cursor: pointer; */
+ /* background: url(/media/keeleuniversity/styleassets/images/hr_fade.jpg) bottom left no-repeat; */
+  padding: 10px 0 3px 0;
+  display: block;
+  float: left;
+  margin: 0 0 0 0;
+  zoom: 1;
+  width: 95%;
+  margin: 5px; }
+
+a .imgListing {
+  zoom: 1;
+  width: 460px; }
+
+.imgListing strong a {
+  /* padding-top:40px; */ }
+
+.imgListing:hover {
+  background: url(/media/keeleuniversity/styleassets/images/hr_fade_over.jpg) bottom left no-repeat;
+  padding: 10px 0 3px 0; }
+
+div#rightCol span.imgListing i {
+  padding-top: 5px; }
+/*
+.twoCols .imgListing {
+  background: url(/media/keeleuniversity/styleassets/images/hr_fade_wide.jpg) bottom left no-repeat; }
+*/
+.twoCols a .imgListing {
+  width: 680px; }
+
+/* .twoCols .imgListing:hover {
+  background: url(/media/keeleuniversity/styleassets/images/hr_fade_over_wide.jpg) bottom left no-repeat !important; }
+
+/* for full width faculty feature boxes in GRAY 
+.facNatSci .twoCols .imgListing:hover {
+  background: url(/media/keeleuniversity/styleassets/images/hr_fade_over_wide_GRAY.jpg) bottom left no-repeat !important; }
+.facSocSci .twoCols .imgListing:hover {
+  background: url(/media/keeleuniversity/styleassets/images/hr_fade_over_wide_GRAY.jpg) bottom left no-repeat !important; }
+.facHealth .twoCols .imgListing:hover {
+  background: url(/media/keeleuniversity/styleassets/images/hr_fade_over_wide_GRAY.jpg) bottom left no-repeat !important; }
+*/ 
+
+.imgListing i {
+  display: block;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #437626;
+  font-weight: normal; /* originally bold in headscape 1.0 CB */
+  padding: 0 0 .4em 0;
+  cursor: default; }
+
+.twoColsNews #midCol .imgListing i {
+  font-size: 1.3em; }
+
+.imgListing em {
+  display: block;
+  font-style: normal;
+  font-size: 1.1em;
+  color: #888;
+  font-weight: normal;
+  padding: 0 0 0 0;
+  line-height: 15px; }
+
+.imgListing strong {
+  color: #333333 !important;
+  font-weight: normal;
+  font-size: 12px;
+  padding-top: 5px;
+  margin-left: 110px;
+  margin-bottom: 10px;
+  display: block; }
+
+/* Feature box type2 */
+.featurebox_type2:hover {
+  background-image: url(/media/keeleuniversity/styleassets/images/hr_fade_wide.jpg);
+  background-position: right; }
+
+.featurebox_type2 p {
+  font-size: 10px; }
+
+
+#midCol .featurebox_type2 h3 {
+  font-size:21px;
+  font-size: 2.1rem;
+  line-height: 21px;
+  line-height: 2.1rem;
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+}
+
+.featurebox_type2 a {
+  border-bottom: none !important; }
+
+.featurebox_type2 {
+  display: inline-block;
+  width: 95%; }
+.featurebox_type2 a img{
+    width:120px !important; height:120px !important;}
+
+
+.rhsfeature {
+  float: left;
+  padding-right: .5em; }
+
+.rhsfeature a {
+  border-bottom: none !important; }
+
+/* end Feature box type2 */
+.box_right {
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: right;
+  font-size: 12px;
+  border: 1px solid #000;
+  // -webkit-border-radius: 7px;
+  // -moz-border-radius: 7px;
+  // border-radius: 7px;
+  // -webkit-box-shadow: 0px 0px 6px 2px #cccccc;
+  // -moz-box-shadow: 0px 0px 6px 2px #cccccc;
+  // box-shadow: 0px 0px 6px 2px #cccccc;
+}
+
+.box_left {
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  float: left;
+  font-size: 12px;
+  border: 1px solid #000;
+  // -webkit-border-radius: 7px;
+  // -moz-border-radius: 7px;
+  // border-radius: 7px;
+  // -webkit-box-shadow: 0px 0px 6px 2px #cccccc;
+  // -moz-box-shadow: 0px 0px 6px 2px #cccccc;
+  // box-shadow: 0px 0px 6px 2px #cccccc; 
+}
+
+.box_right h3 {
+  line-height: 1em; }
+
+/*Breakout Boxes */
+/*End Breakout Boxes */
+/* =Image bottom right curves
+*******************************************************************************************************************/
+.curvedImage {
+  margin: 0em 2em .5em 0em;
+  padding: 0;
+  float: left;
+  position: relative; }
+
+.curvedImageRight {
+  margin: 0 0 1em 2em;
+  padding: 0;
+  position: relative;
+  float: right; }
+
+.curvedImage.paragraph {
+  margin: 0em 0 0 2em; }
+
+.curvedImage.paragraph span.curveBr {
+  bottom: 2em; }
+
+.curvedImage span.curveBr {
+ // background: url(/media/keeleuniversity/styleassets/images/squareOverlay.png) bottom right;
+  bottom: 4px;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  height: 90px;
+  width: 90px; }
+
+/*Smaller*/
+.curvedImageSmall {
+  height: 50px;
+  width: 50px;
+  margin: 0em 10px .5em 0em;
+  padding: 0;
+  float: left;
+  position: relative; }
+
+.curvedImageSmall span.curveBrSmall {
+  background: url(/media/keeleuniversity/styleassets/images/squareOverlaySmall.png) bottom right;
+  top: 2px;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  height: 50px;
+  width: 50px; }
+
+/*Multimedia curved corners and overlays */
+.mediaImage {
+  width: 160px;
+  margin: 0 1.5em 0em 0em;
+  padding: 0;
+  position: relative;
+  float: left; }
+
+.mediaImage span.curveMedia {
+  bottom: 0em;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  width: 160px;
+  height: 100px; }
+
+.mediaImage span.curveMedia.video {
+  background: url(/media/keeleuniversity/styleassets/images/multimedia_over_video.png) bottom right; }
+
+.mediaImage span.curveMedia.audio {
+  background: url(/media/keeleuniversity/styleassets/images/multimedia_over_audio.png) bottom right; }
+
+.mediaImage span.curveMedia.image {
+  background: url(/media/keeleuniversity/styleassets/images/multimedia_over_image.png) bottom right; }
+
+.mediaImage span.curveMedia.podcast {
+  background: url(/media/keeleuniversity/styleassets/images/multimedia_over_podcast.png) bottom right; }
+
+/*Small rounded boxes **********************************/
+.smlnk_wrapper {
+  float: left;
+  width: 49%;
+  margin: 0px !important;
+  padding: 0px; }
+
+.smlink_wrapperRight {
+  float: right;
+  width: 49%;
+  margin: 0px !important;
+  padding: 0px; }
+
+.smlnk {
+  padding: 0px 5px 0px 0px; }
+
+.smlnk_text {
+  padding-left: 10px; }
+
+ /* =Image bottom left curves for news images
+*******************************************************************************************************************/
+#midCol .curvedBL {
+  clear: left;
+  display: block;
+  margin: 0em 0 .5em 0em;
+  padding: 0;
+  position: relative;
+  float: left; }
+
+#midCol .curvedBLfloatright {
+  clear: left;
+  display: block;
+  margin: 0em 0 .5em 0em;
+  padding: 0;
+  position: relative;
+  float: right; }
+
+#midCol .curvedBL.padright {
+  margin: 5px 20px .5em 0em; }
+
+#midCol .curvedBL.homepadright {
+  margin: 15px 20px .5em 0em; }
+
+#midCol .curvedBL.paragraph {
+  margin: 0em 0 0 2em; }
+
+#midCol .curvedBL.paragraph span.curveBr {
+  bottom: 2em; }
+
+.curvedBL span.curveBL {
+  background: url(/media/keeleuniversity/styleassets/images/overlayBL.png) bottom left no-repeat;
+  bottom: .4em;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 40px; }
+
+.curvedBL span.curveTR {
+  background: url(/media/keeleuniversity/styleassets/images/overlayTR.png) top right no-repeat;
+  top: 0em;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 40px; }
+
+.curvedBLfloatright span.curveTR {
+  background: url(/media/keeleuniversity/styleassets/images/overlayTR.png) top right no-repeat;
+  top: 0em;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 40px; }
+
+.curvedBLfloatright span.curveBL {
+  background: url(/media/keeleuniversity/styleassets/images/overlayBL.png) bottom left no-repeat;
+  bottom: .4em;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  height: 40px;
+  width: 40px; }
+
+/* Smaller Images*/
+.curvedBL span.curveBLSmall {
+  background: url(/media/keeleuniversity/styleassets/images/overlayBL.png) top left no-repeat;
+  top: 0em;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  height: 50px;
+  width: 50px; }
+
+/* =FOOTER
+*******************************************************************************************************************/
+#footer {
+  // background: url(/media/keeleuniversity/styleassets/images/foot.png) 0 0 no-repeat;
+  width: 1013px;
+  height: 16.1em;
+  margin: 0;
+  padding: 20px 0 0 0;
+  clear: left;
+  color: #fff; }
+
+#copyright {
+  padding: 22px 0 0 30px;
+  color: #666666;
+  width: 220px;
+  float: left; }
+
+div#copyright a {
+  display: block; }
+
+#footInfo {
+  color: #b3b3b3;
+  padding: 5px 0 0 20px;
+  width: 505px;
+  float: left; }
+
+#lastmod {
+  color: #FFFFFF; }
+
+#footInfo ul {
+  width: 230px; }
+
+#footInfo ul li {
+  padding: 0 0 5px 0; }
+
+#footInfo ul li a {
+  // padding: 0 0 5px 15px;
+  // background: url(/media/keeleuniversity/styleassets/images/bulletFootGreen.png) 0 4px no-repeat;
+  color: #d2e9c6 !important; }
+
+#footInfo ul li a:hover {
+  color: #fff !important; }
+
+#footInfo h6 {
+  color: #CCCCCC !important;
+  display: block;
+  padding-bottom: 4px;
+  font-size: 1.1em; }
+
+.tel {
+  float: left;
+  display: block;
+  padding: 6px 0 0px 0;
+  color: #ccc !important; }
+
+#footInfo p {
+  padding: 0 40px 0 0;
+  width: 230px;
+  float: right;
+  text-align: left; }
+
+#footInfo p {
+  line-height: 12px; }
+
+#footInfo strong {
+  display: block;
+  padding: 0 0 5px 0;
+  color: #89C761;
+  font-size: 1.1em;
+  font-weight: bold; }
+
+#footer #address {
+  color: #89c761;
+  padding: 15px 16px 0 0;
+  width: 220px;
+  float: left; }
+
+#midCol address {
+  // font-size: 12px;
+}  
+
+#footer .email a {
+  color:white !important;
+}
+#footer .email a:hover {
+  color:#2BB675 !important;
+}  
+
+/* =MAIN COLUMN
+*******************************************************************************************************************/
+/*.overlayCurve {
+float:left;
+margin:0 2em 0.5em 0;
+padding:0;
+position:relative;
+}
+*/
+blockquote.full, blockquote.right, blockquote {
+  color: #333;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  /*float: right;*/
+  padding: 20px;
+  background: #ddd;
+  margin: 0.5em 0 1em 0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; 
+  float:left;
+}
+
+blockquote.full {
+  float: left;
+  margin: 0 0 2em 0; }
+
+blockquote.right {
+  width: 33%;
+  margin: 0 0 1em 2em; }
+
+blockquote h3 {
+  font-size: 1.2em !important;
+  margin: 0;
+  padding: 0; }
+
+#midCol blockquote ul li {
+  background: url(/media/keeleuniversity/styleassets/images/bullet_grey.gif) 0 0.8em no-repeat;
+  font-size: .9em;
+  padding: 0 0 .2em 1em;
+  margin: 0; }
+
+#midCol blockquote ul {
+  margin: .3em 0 1em 0; }
+
+cite {
+  display: block;
+  width: 40%;
+  background: url(/media/keeleuniversity/styleassets/images/quote_tl.png) top left no-repeat #e4ebf5;
+  font-weight: bold;
+  font-style: italic;
+  position: relative;
+  float: right;
+  color: #777;
+  font-size: 1.1em;
+  line-height: 2em;
+  padding: 10px 10px 10px 10px !important;
+  margin: 0.5em 0em 1em 1.1em; }
+
+.citeBR {
+  background: url(/media/keeleuniversity/styleassets/images/quote_br.png) bottom right no-repeat #e5efb3;
+  bottom: 0em;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  height: 27px;
+  width: 25px;
+  font-size: .8em; }
+
+.citor {
+  font-size: .8em;
+  float: left;
+  font-weight: normal;
+  font-style: normal; }
+
+#midCol ul {
+  margin: 10px 0 10px 0; }
+
+#midCol strong.searchResults {
+  font-weight: bold; }
+
+#midCol ul.listing.search {
+  margin: 0px 0 10px 0; }
+
+#midCol ul li {
+  color: #000000;
+  font-size: 12px;
+  // background: url(/media/keeleuniversity/styleassets/images/bulletFootGreen.png) 0 11px no-repeat;
+  padding: 5px 0 0 15px; }
+
+#midCol ol {
+  margin: 1em 0 0 0;
+  color: #666; }
+
+#midCol ol li {
+  // font-size: 12px;
+  color: #000000;
+  background: none;
+  list-style: decimal;
+  padding: 0 0 1em 0; }
+
+#midCol ul li li, #midCol ol li li {
+  // font-size: 1.0em;
+}
+
+hr {
+  border: 1px dotted #ddd;
+  margin: 1em 0 1em 0; }
+
+#midCol p {
+  font-size: 12px;
+  padding: 5px 0 5px 0;
+  line-height: 1.7em; }
+
+div#midCol p a {
+  /* font-size: 11px !important; */
+  /*deleted 4th March 2011*/ }
+
+#midCol p.caption {
+  text-align: left;
+  margin: 0 0 10px 0;
+  padding: 0px 0 10px 0;
+  // font-size: 9px;
+  color: #6c9b51;
+  display: block;
+  clear: left;
+  float: left;
+  width: 220px; }
+
+.featureImage {
+  padding: 0 0 1em 1.4em;
+  float: right; }
+
+#midCol .date {
+  color: #8d8d8c;
+  font-weight: bold; }
+
+/* =Tables
+********************************************************************************************************************/
+#midCol table {
+  width: 100%;
+  /*background-color:#e7edc8;  */
+  /* Taken out on 3rd July 2009 as this colours in ALL tables green, even within Schools. CBeard */
+  border: 1px solid #969696;
+  border-collapse: collapse;
+  // font-size: 12px; 
+  }
+
+#midCol th {
+  border: 1px solid #aaa;
+  padding: 5px; }
+
+#midCol table h4 {
+  // font-size: 13px !important;
+  // No idea why this is set to 13px so letting new kfonts sass take over and initialising current site
+  // no need for this now as we have gone live. July 2015. CB.
+  // font-size: initial;
+}
+
+#midCol td {
+  border: 1px solid #aaa;
+  padding: 5px; }
+
+#midCol td a {
+  /*color: #C00063; this is pink so getting rid July 2009 */
+  /*now it is inhereted colour and bold */
+  // font-weight: bold;
+   }
+
+#midCol tr.tableRowEven {
+  background-color: #e7edc8; }
+
+#midCol table.tableGrey {
+  background: #eaefca;
+  padding: 13px;
+  margin: 10px 0 15px 0; }
+
+#midCol tr.tableTitle td {
+  background-color: #e7edc8; }
+
+#midCol tr.tableRowEven {
+  background-color: #e7edc8; }
+
+#midCol table tr.darkRow {
+  background: #c5d181; }
+
+#midCol table tr th {
+  padding: 3px; }
+
+table#checkboxes td input {
+  padding: 0;
+  margin: 0; }
+
+#midCol table tr.tableHead {
+  background: #e7edc8;
+  color: #fff; }
+
+/* =Site Map
+*******************************************************************************************************************/
+#midCol ul.listing.sitemap {
+  display: block;
+  margin: 0 0 70px 0; }
+
+#midCol ul.listing.sitemap ul {
+  margin: 0 0 0 0; }
+
+#midCol ul.listing.sitemap li {
+  font-size: 10px;
+  border: none;
+  background: none;
+  margin: 0 0 .2em 0;
+  padding: 0; }
+
+#midCol ul.listing.sitemap li a {
+  font-weight: bold;
+  display: block;
+  background: #444;
+  color: #fff !important;
+  text-decoration: none  !important;
+  padding: .6em .3em .6em .5em;
+  margin: 0; }
+
+#midCol ul.listing.sitemap li ul li a {
+  color: #333  !important;
+  background: #CCD9EC;
+  padding: .3em .3em .3em 2em; }
+
+#midCol ul.listing.sitemap li ul li ul li a {
+  color: #666  !important;
+  background: #E4EBF5;
+  padding: .3em .3em .3em 4em; }
+
+#midCol ul.listing.sitemap a:hover {
+  color: #aaa  !important;
+  text-decoration: underline !important; }
+
+/* =Listings - News
+*******************************************************************************************************************/
+#midCol ul.listing {
+  padding: 0; }
+
+#midCol ul.listing li {
+  float: left;
+  width: 100%;
+  background: url(/media/keeleuniversity/styleassets/images/bullet_dkgrey_square.gif) 0 1.4em no-repeat;
+  border-top: 1px solid #efefef;
+  display: block;
+  clear: left;
+  margin: 0 2em 0 0;
+  padding: .3em 0 10px 0;
+  font-size: 1.2em; }
+
+#midCol ul.multimedia li {
+  background: none; }
+
+#midCol ul.listing.search li {
+  background: url(/media/keeleuniversity/styleassets/images/bulletFootGreen.png) 0 19px no-repeat;
+  border-top: 1px solid #efefef;
+  margin: 1.5em 2em 0 0;
+  padding: .3em 0 0 0; }
+
+#midCol ul.listing.downloads {
+  margin: 10px 0 20px 0 !important; }
+
+#midCol ul.listing li h3 a {
+  color: #869e23;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0em 0 .4em 1em; }
+
+#midCol ul.listing li a {
+  color: #869e23 !important; }
+
+#midCol ul.listing.downloads li h3 a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) 0 0 no-repeat;
+  display: block;
+  font-size: 0.7em;
+  color: #808080;
+  padding: 0 0 .4em 2em; }
+
+#midCol ul.listing.downloads li h3.word a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_word.gif) 0 0 no-repeat; }
+
+#midCol ul.listing.downloads li h3.image a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_photo.gif) 0 0 no-repeat; }
+
+#midCol ul.listing.downloads li .time {
+  padding: 0 0 1em 0; }
+
+
+#midCol ul.listing li h3 a:hover {
+  color: #000; }
+
+#midCol ul.listing li .date, #midCol ul.listing li .time, #midCol ul.listing li .location,
+#midCol .date, #midCol .time, #midCol .location {
+  float: left;
+  clear: left;
+  font-weight: normal;
+  font-size: .9em;
+  color: #666;
+  padding: 0 0 0em 0; }
+
+#midCol ul.listing li .date {
+  font-weight: bold;
+  color: #666666; }
+
+#midCol ul.listing li strong {
+  width: 100%;
+  float: left;
+  color: #333333;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  padding: .5em 0 1em 0; }
+
+#midCol ul.listing.search li p {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.2em; }
+
+#midCol ul.listing.search li p a strong {
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+  color: #355E8F;
+  line-height: 1.2em;
+  padding: 0 .5em 0 0;
+  width: auto; }
+
+/* =CourseList
+*******************************************************************************************************************/
+.courseListTable {
+  background: #E8EFFA;
+  font-size: 1em;
+  width: 100%;
+  margin: 0em 0 1em 0;
+  padding: 5px;
+  border-collapse: collapse; }
+
+.courseListTable th {
+  padding: 6px 6px 6px 10px;
+  margin: 2px !important; }
+
+.courseListTable td a {
+  display: block;
+  padding: 6px 6px 6px 10px;
+  margin: 2px !important; }
+
+.courseListTable tr.alternate {
+  background: #ddd; }
+
+.courseListTable th {
+  font-weight: bold;
+  background: #7FAF62; }
+
+.courseListTable tr {
+  margin: 2px !important;
+  border: 2px solid #fff; }
+
+td.courseName {
+  width: 60%;
+  font-weight: bold;
+  color: #444; }
+
+td.courseDuration {
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #444; }
+
+td.courseQual {
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #444; }
+
+.courseListTable tr:hover {
+  background: #C5DFB5 !important;
+  cursor: pointer; }
+
+.courseListTable tr:hover a {
+  color: #000 !important; }
+
+/* =Multimedia Listing
+*******************************************************************************************************************/
+.listThumb {
+  padding: 20px 0 0 0;
+  display: block;
+  float: left; }
+
+.media {
+  margin: 0 0 0 15em;
+  width: 23em; }
+
+#midCol #textContent ul.listing.multimedia li {
+  border-bottom: 1px dotted #ccc;
+  border-top: none;
+  padding-bottom: 1em; }
+
+#midCol #textContent ul.listing.multimedia h3 {
+  float: left;
+  display: block;
+  font-size: 1.1em;
+  padding: 0 0 0 0;
+  color: #869e23;
+  width: 43em; }
+
+#midCol #textContent ul.listing li .mediaType {
+  float: left;
+  font-size: .9em;
+  color: #555;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 0 .5em 0;
+  width: 43em; }
+
+#midCol #textContent ul.listing li .mediaDescription, #midCol #textContent ul.listing li .mediaDescription p {
+  float: left;
+  font-size: .96em;
+  line-height: 1.5em;
+  text-decoration: none;
+  display: block;
+  padding: 0 0 1em 0;
+  width: 43em; }
+
+#midCol #textContent ul.listing li.featured {
+  padding: 2em 0 2em 0;
+  border-bottom: 3px solid #ddd;
+  border-top: 3px solid #ddd;
+  background: url(/media/keeleuniversity/styleassets/images/media_feature.jpg) top left no-repeat; }
+
+#midCol #textContent ul.listing li.featured h3 {
+  font-size: 1.3em; }
+
+#midCol .mediaDownloads {
+  float: left;
+  width: 43em;
+  margin: 10px 0 0 0;
+  display: block; }
+
+#midCol #textContent ul.listing li .downloadLink a {
+  text-decoration: none;
+  z-index: 1;
+  font-size: .8em;
+  background: #fff;
+  color: #990033;
+  border: 1px dotted #ddd;
+  margin: 3em .2em 0 0;
+  padding: .4em;
+  display: block; }
+
+#midCol #textContent ul.listing li .downloadLink a:hover {
+  background: #ccc;
+  color: #000; }
+
+#midCol ul.multimedia ul.mediaLaunch li {
+  display: inline !important; }
+
+/* =AZ Listing
+*******************************************************************************************************************/
+#midCol ul.azlist li {
+  background: none;
+  display: inline;
+  height: 30px;
+  padding: 0;
+  margin: 0 !important; }
+
+#midCol ul.azlist li a {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 4px 5px 4px 5px;
+  background: #D4E2F5;
+  margin: 0 !important; }
+
+#midCol ul.azlist li a:hover {
+  background: #143C6F;
+  color: #fff; }
+
+#midCol ul.listing.az li {
+  background: none;
+  color: #fff;
+  padding: 0em 0 0 0;
+  margin: 0; }
+
+#midCol ul.listing.az h3 {
+  margin: 1em 0 0 0;
+  padding: .6em;
+  background: #000;
+  color: #fff; }
+
+#midCol ul.listing.az {
+  display: block;
+  margin: 25px 0 2em 0; }
+
+/* =Page Selector 
+*******************************************************************************************************************/
+#pageSelect {
+  width: 100%;
+  clear: left;
+  float: left;
+  margin: 1.5em 0 1em 0; }
+
+#pageSelect ul {
+  padding: 2em 0 1em 0; }
+
+#midCol #pageSelect ul li {
+  background: none;
+  display: inline;
+  margin: 0;
+  padding: 0; }
+
+#pageSelect ul li a {
+  color: #444;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: #D1DDED;
+  text-decoration: none !important;
+  padding: .4em .6em .5em .6em; }
+
+#pageSelect ul li.current a {
+  background: #5A8E39;
+  color: #fff !important;
+  text-decoration: none !important; }
+
+#pageSelect ul li.button a {
+  background: #fff;
+  color: #000; }
+
+#pageSelect ul li.button a:hover {
+  background: #ddd;
+  color: #fff; }
+
+#pageSelect ul li.button img {
+  vertical-align: bottom; }
+
+#pageSelect ul li a:hover {
+  background: #A1B9DB; }
+
+#midCol p.eventIntro {
+  padding: 2em 0 1em 0; }
+
+/* OLD headscape forms styles went here. Now exported into external layout.scss
+
+
+
+/* =COURSE PAGE
+*******************************************************************************************************************/
+#courseBlock {
+  background: url(/media/keeleuniversity/styleassets/images/backg_fader2.jpg) 0 2.6em repeat-x; }
+
+#courseBlock p {
+  padding: 0px 5px 3px 0px !important; }
+
+#courseContentOverview, #courseWhyKeele, #courseStructure,
+#courseFuture, #courseTeaching, #tab1, #tab2, #tab3, #tab4, #tab5,
+#tab6, #tab7, #tab8, #tab9, #tab10 {
+  display: block;
+  padding: 1.2em;
+  font-size: 1.1em;
+  margin: .6em 0 0 0;
+  background: #E8EFF7; }
+
+#courseBlock h4 {
+  font-size: 1.2em;
+  color: #376a19;
+  font-weight: bold;
+  padding: 1.5em 0 1.5em 0; }
+
+ul#courseTabs {
+  margin: 30px 0 0 0; }
+
+ul#courseTabs li {
+  background: #aaa;
+  display: inline;
+  margin: 0 1px 0 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.7em;
+  padding-bottom: 1em;
+  float:left; }
+
+ul#courseTabs li a {
+  background: #5A8E39;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  display: inline;
+  margin: 0 !important;
+  padding: 0.7em 1.3em .9em 1.3em; }
+
+ul#courseTabs li a:visited {
+  background: #5A8E39;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  display: inline;
+  margin: 0 !important;
+  padding: 0.7em 1.3em .9em 1.3em; }
+
+ul#courseTabs li a.current {
+  border-bottom: 2px solid #E8EFF7;
+  background: #E8EFF7;
+  color: #333; }
+
+ul#courseTabs li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #5A8E39; }
+
+#content table.detailBlock {
+  width: 60%;
+  margin: 0 0 2em 0;
+  padding: 0; }
+
+#content table.detailBlock td {
+  padding: .5em; }
+
+#content table.detailBlock td.dkblue {
+  width: 33%;
+  color: #fff;
+  font-weight: bold;
+  background: #c4c4c4; }
+
+
+/* =Find a Course Block
+*******************************************************************************************************************/
+#findCourseBlock {
+  float: left;
+  width: 21.4em;
+  height: 7.1em;
+  margin: 2.4em 0 0 3.7em;
+  background: url(/media/keeleuniversity/styleassets/images/panel_course.png) 0 0 no-repeat; }
+
+#findCourseBlock fieldset legend {
+  display: block;
+  padding: 0.7em 0 0 0;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold; }
+
+#findCourseBlock fieldset {
+  text-align: left;
+  width: 18em;
+  padding: 0.5em 0 0 2em;
+  margin: 0;
+   }
+
+#searchButtons form input {
+  border: 1px solid #ddd; }
+
+form #courseField input {
+  width: 150px;
+  float: left;
+  padding: 2px; }
+
+form #courseGo input {
+  float: right;
+  background: url(/media/keeleuniversity/styleassets/images/backg_search_arrow.gif) 0 0 no-repeat #90304b;
+  border: none;
+  height: 22px;
+  width: 22px; }
+
+body:first-of-type #courseGo input {
+  top: -10px; }
+
+/*Safari fix - W3C validation will fail ! */
+form #courseGo input:hover {
+  background: url(/media/keeleuniversity/styleassets/images/backg_search_arrow_over.gif) 0 0 no-repeat #90304b; }
+
+/* =GALLERY TEMPLATE .
+*******************************************************************************************************************/
+/* Categories **************/
+#midCol .catlist {
+  float: left;
+  margin: 0 0 25px 0;
+  padding: 0;
+  width: 100%; }
+
+#midCol .catlist li {
+  float: left;
+  display: block;
+  background: none;
+  width: 210px;
+  margin: 0 20px 3px 0;
+  padding: 0; }
+
+#midCol .catlist a {
+  float: left;
+  display: block;
+  width: 200px;
+  background: #E8F4E0;
+  padding: 2px 5px; }
+
+#midCol .catlist a:hover {
+  background: #5A8E39;
+  color: #fff; }
+
+#midCol .catlist #sCurrent {
+  width: 200px;
+  padding: 2px 5px;
+  background: #000;
+  color: #fff;
+  font-weight: bold; }
+
+/* Images ******************/
+.galleryImg {
+  zoom: 1;
+  float: left;
+  width: 140px;
+  height: 180px;
+  padding: 10px 9px 0 9px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  text-align: center;
+  background: #efefef; }
+
+.galleryImg img {
+  zoom: 1;
+  padding: 1px;
+  border: 3px solid #ccc;
+  margin: auto;
+  width: 130px;
+  //height: 100px;
+  text-align: center; }
+
+.galleryImg span {
+  zoom: 1;
+  width: 150px;
+  text-align: center;
+  line-height: 10px;
+  font-size: 11px;
+  margin: 0;
+  padding: 0; }
+
+.galleryImg:hover {
+  background: #ddd; }
+
+.galleryImg:hover span {
+  left: 0px; }
+
+// .tMidImage #imgBlockLeft h2 {
+//   padding-top: 18px;
+//   padding-bottom: 18px;
+//   background: #5a8f3b url(/media/keeleuniversity/styleassets/images/imgLeftLargeBottomOverlay.png) no-repeat scroll left bottom; }
+
+// .tMidImage #imgBlockLeft ul {
+//   padding-top: 47px;
+//   background: #82c65a url(/media/keeleuniversity/styleassets/images/imgLeftLargeTopOverlay.png) repeat scroll left top;
+//   font-size: 1.2em; }
+
+/* CB Old position for Faculties and Schools April 2015*/
+///////////////////////////////
+///////////////////////////////
+
+ 
+/* Directorate Fixes */
+/* HR and SS */
+.hrtable td {
+  background-color: #F0F0F0; }
+
+.hrtable th {
+  background-color: #006633;
+  color: #FFFFFF; }
+
+/* ## t4 added */
+.multimedia-photo {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 100px;
+  overflow: visible;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: #eee;
+  padding: 10px; }
+
+/* [downloads] */
+#midCol div.download {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #efefef;
+  display: block;
+  clear: left;
+  margin: 0 2em 0 0;
+  padding: .3em 0 10px 0;
+  line-height: 21px;
+  // font-size: 1.2em;
+}
+
+#midCol div.download {
+  margin: 5px 0 10px 0 !important; }
+
+#midCol div.download h3 a {
+  color: #869e23;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0em 0 .4em 1em; }
+
+#midCol div.download a {
+  color: #869e23 !important; }
+
+#midCol div.download h3 a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) 0 0 no-repeat;
+  display: block;
+  font-size: 0.7em;
+  color: #808080;
+  padding: 0 0 .4em 2em; }
+
+#midCol div.download h3.Word a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_word.gif) 0 0 no-repeat; }
+
+#midCol div.download h3.image a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_photo.gif) 0 0 no-repeat; }
+
+#midCol div.download h3.Excel a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_excel.gif) 0 0 no-repeat; }
+
+#midCol div.download h3.Powerpoint a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_powerpoint.gif) 0 0 no-repeat; }
+
+#midCol div.download h3.Application a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_download.gif) 0 0 no-repeat; }
+
+#midCol div.download h3.wmv a {
+  background: url(/media/keeleuniversity/styleassets/images/icon_wm.jpg) 0 0 no-repeat; }
+
+#midCol div.download h3.mp3 a {
+  background: url(/media/keeleuniversity/styleassets/images/Podcast.png) 0 0 no-repeat; }
+
+#midCol div.download h3.mp4 a {
+  background: url(/media/keeleuniversity/styleassets/images/video.png) 0 0 no-repeat; }
+
+#midCol div.download .time {
+  font-weight: normal;
+  font-size: .9em;
+  color: #666;
+  padding: 0 0 0em 0; }
+
+#midCol div.download .date {
+  font-weight: bold;
+  font-size: .9em;
+  color: #666;
+  padding: 0 0 0em 0; }
+
+.downloadpdf {
+  background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) 0 0 no-repeat;
+  display: block;
+  text-decoration: none;
+  padding-left: 26px;
+  line-height: 21px; }
+
+/* Google Search Widget */
+#goog-wm {
+  padding: 1em;
+  background-color: white; }
+
+#goog-wm form input {
+  background: white;
+  border: 0.5px solid #CCCCCC; }
+
+#goog-wm h3 {
+  padding: .5em; }
+
+#goog-wm-sb {
+  height: 1em; }
+
+#goog-wm h3.closest-match {
+  color: #8f2831;
+  border-bottom: 2px dashed #aebd63;
+  padding-bottom: 0.5em;
+  margin: 0; }
+
+#goog-wm ul li {
+  background: none; }
+
+/*
+ * Simple Web Buttons
+ *
+ * The CSS3 version of the Simple Web Buttoms designed by Orman Clark http://www.premiumpixels.com/
+ * Author: Raspo http://tommasoraspo.com/
+ * 
+ * HTML Markup required:
+ * A simple anchor with a class of 'button' and a second class to indicate the color
+ * 
+ * i.e. <a href="#" class="button blue"></a>
+ *
+ * 10 colors available: white, grey, pink, orange, green, blue, purple, teal, darkblue, black
+ *
+ */
+.cbuttonDiv {
+  float: left;
+  padding-bottom: 20px;}
+
+// .cbutton {
+//   display: inline-block;
+//   text-decoration: none;
+//   font: bold 12px/12px HelveticaNeue, Arial;
+//   padding: 8px 11px;
+//   color: #555;
+//   border: 1px solid #dedede;
+//   -webkit-border-radius: 3px;
+//   -moz-border-radius: 3px;
+//   border-radius: 3px;
+//   float: left;
+//   /*margin-left:14px; */
+//   border-bottom: medium none !important; }
+
+// .cbutton.white {
+//   background: #f5f5f5;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f0f0f0');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f0f0f0));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #f9f9f9, #f0f0f0);
+//   border-color: #dedede #d8d8d8 #d3d3d3;
+//   color: #555;
+//   text-shadow: 0 1px 0 #fff;
+//   -webkit-box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb;
+//   -moz-box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb;
+//   box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #fbfbfb; }
+
+// .cbutton.white:hover {
+//   background: #f4f4f4;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#f8f8f8');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#f8f8f8));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #efefef, #f8f8f8);
+//   border-color: #c7c7c7 #c3c3c3 #bebebe;
+//   text-shadow: 0 1px 0 #fdfdfd;
+//   -webkit-box-shadow: 0 1px 1px #ebebeb, inset 0 1px 0 #f3f3f3;
+//   -moz-box-shadow: 0 1px 1px #ebebeb, inset 0 1px 0 #f3f3f3;
+//   box-shadow: 0 1px 1px #ebebeb, inset 0 1px 0 #f3f3f3; }
+
+// .cbutton.grey {
+//   background: #bdbdbd;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#aeaeae');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#cacaca), to(#aeaeae));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #cacaca, #aeaeae);
+//   border-color: #b5b5b5 #a1a1a1 #8f8f8f;
+//   color: #555;
+//   text-shadow: 0 1px 0 #d4d4d4;
+//   -webkit-box-shadow: 0 1px 1px #c9c9c9, inset 0 1px 0 #d7d7d7;
+//   -moz-box-shadow: 0 1px 1px #c9c9c9, inset 0 1px 0 #d7d7d7;
+//   box-shadow: 0 1px 1px #c9c9c9, inset 0 1px 0 #d7d7d7; 
+//   font-weight: bold !important;
+//   color: black !important;}
+
+// .cbutton.grey:hover {
+//   background: #c2c2c2;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bcbcbc', endColorstr='#c2c2c2');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#bcbcbc), to(#c2c2c2));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #bcbcbc, #c2c2c2);
+//   border-color: #989898 #8e8e8e #878787;
+//   text-shadow: 0 1px 0 #dadada;
+//   -webkit-box-shadow: 0 1px 1px #cdcdcd, inset 0 1px 0 #ccc;
+//   -moz-box-shadow: 0 1px 1px #cdcdcd, inset 0 1px 0 #ccc;
+//   box-shadow: 0 1px 1px #cdcdcd, inset 0 1px 0 #ccc; }
+
+// .cbutton.pink {
+//   background: #f67689;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f78297', endColorstr='#f56778');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#f78297), to(#f56778));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #f78297, #f56778);
+//   border-color: #df6f8b #da5f75 #d55061;
+//   color: #913944;
+//   text-shadow: 0 1px 0 #f89ca9;
+//   -webkit-box-shadow: 0 1px 1px #c1c1c1, inset 0 1px 0 #f9a1b1;
+//   -moz-box-shadow: 0 1px 1px #c1c1c1, inset 0 1px 0 #f9a1b1;
+//   box-shadow: 0 1px 1px #c1c1c1, inset 0 1px 0 #f9a1b1; }
+
+// .cbutton.pink:hover {
+//   background: #f67c90;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f56c7e', endColorstr='#f78297');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#f56c7e), to(#f78297));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #f56c7e, #f78297);
+//   border-color: #c36079 #c25669 #c14e5c;
+//   text-shadow: 0 1px 0 #f9a6b4;
+//   -webkit-box-shadow: 0 1px 1px #c3c3c3, inset 0 1px 0 #f8909e;
+//   -moz-box-shadow: 0 1px 1px #c3c3c3, inset 0 1px 0 #f8909e;
+//   box-shadow: 0 1px 1px #c3c3c3, inset 0 1px 0 #f8909e; }
+
+// .cbutton.orange {
+//   background: #fecc5f;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feda71', endColorstr='#febb4a');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#feda71), to(#febb4a));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #feda71, #febb4a);
+//   border-color: #f5b74e #e5a73e #d6982f;
+//   color: #996633;
+//   text-shadow: 0 1px 0 #fedd9b;
+//   -webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #fee395;
+//   -moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #fee395;
+//   box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #fee395; }
+
+// .button.orange:hover {
+//   background: #fecb5e;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec354', endColorstr='#fecd61');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#fec354), to(#fecd61));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #fec354, #fecd61);
+//   border-color: #d29a3a #cc9436 #c89133;
+//   text-shadow: 0 1px 0 #fee1a0;
+//   -webkit-box-shadow: 0 1px 1px #d4d4d4, inset 0 1px 0 #fed17e;
+//   -moz-box-shadow: 0 1px 1px #d4d4d4, inset 0 1px 0 #fed17e;
+//   box-shadow: 0 1px 1px #d4d4d4, inset 0 1px 0 #fed17e; }
+
+// .cbutton.green {
+//   background: #b7d770;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cae285', endColorstr='#9fcb57');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#cae285), to(#9fcb57));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #cae285, #9fcb57);
+//   border-color: #adc671 #98b65b #87aa4a;
+//   color: #5d7731;
+//   text-shadow: 0 1px 0 #cfe5a4;
+//   -webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #d7e9a4;
+//   -moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #d7e9a4;
+//   box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #d7e9a4; }
+
+// .cbutton.green:hover {
+//   background: #b9d972;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8d872', endColorstr='#b9d972');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#b8d872), to(#b9d972));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #b8d872, #b9d972);
+//   border-color: #8bb14d #83a648 #7d9e45;
+//   text-shadow: 0 1px 0 #d5e8aa;
+//   -webkit-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #cae295;
+//   -moz-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #cae295;
+//   box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #cae295; }
+
+// .cbutton.blue {
+//   background: #92dbf6;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abe4f8', endColorstr='#6fcef3');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#abe4f8), to(#6fcef3));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #abe4f8, #6fcef3);
+//   border-color: #8dc5da #76b7cf #63abc7;
+//   color: #42788e;
+//   text-shadow: 0 1px 0 #b6e6f9;
+//   -webkit-box-shadow: 0 1px 1px #d6d6d6, inset 0 1px 0 #c0ebfa;
+//   -moz-box-shadow: 0 1px 1px #d6d6d6, inset 0 1px 0 #c0ebfa;
+//   box-shadow: 0 1px 1px #d6d6d6, inset 0 1px 0 #c0ebfa; }
+
+// .cbutton.blue:hover {
+//   background: #92dbf6;
+//   border-color: #7caec0 #68a3ba #5a9cb5;
+//   text-shadow: 0 1px 0 #bee9fa;
+//   -webkit-box-shadow: 0 1px 1px #d6d6d6, inset 0 1px 0 #ade4f8;
+//   -moz-box-shadow: 0 1px 1px #d6d6d6, inset 0 1px 0 #ade4f8;
+//   box-shadow: 0 1px 1px #d6d6d6, inset 0 1px 0 #ade4f8; }
+
+// .cbutton.purple {
+//   background: #dfaeda;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8c4e4', endColorstr='#d494ce');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#e8c4e4), to(#d494ce));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #e8c4e4, #d494ce);
+//   border-color: #bc9db9 #ad89aa #a1799d;
+//   color: #7b5777;
+//   text-shadow: 0 1px 0 #eacae6;
+//   -webkit-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #eed3eb;
+//   -moz-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #eed3eb;
+//   box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #eed3eb; }
+
+// .cbutton.purple:hover {
+//   background: #e0b1db;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#deabd9', endColorstr='#e0b1db');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#deabd9), to(#e0b1db));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #deabd9, #e0b1db);
+//   border-color: #a482a0 #9b7897 #947090;
+//   text-shadow: 0 1px 0 #ecd0e9;
+//   -webkit-box-shadow: 0 1px 1px #cdcdcd, inset 0 1px 0 #ccc;
+//   -moz-box-shadow: 0 1px 1px #cdcdcd, inset 0 1px 0 #ccc;
+//   box-shadow: 0 1px 1px #cdcdcd, inset 0 1px 0 #ccc; }
+
+// .cbutton.teal {
+//   background: #9cedef;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b7f2f4', endColorstr='#7ce7ea');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#b7f2f4), to(#7ce7ea));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #b7f2f4, #7ce7ea);
+//   border-color: #90c6c8 #78bdc0 #65b6ba;
+//   color: #437b7d;
+//   text-shadow: 0 1px 0 #bef3f5;
+//   -webkit-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #c9f5f7;
+//   -moz-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #c9f5f7;
+//   box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #c9f5f7; }
+ 
+// .cbutton.teal:hover {
+//   background: #9fedf0;
+//   border-color: #7db9bb #6bb2b5 #5dacaf;
+//   text-shadow: 0 1px 0 #c5f4f6;
+//   -webkit-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #b7f2f4;
+//   -moz-box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #b7f2f4;
+//   box-shadow: 0 1px 1px #d5d5d5, inset 0 1px 0 #b7f2f4; }
+
+// .cbutton.darkblue {
+//   background: #a5b8c6;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#becbd6', endColorstr='#88a1b4');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#becbd6), to(#88a1b4));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #becbd6, #88a1b4);
+//   border-color: #a2afb8 #8696a1 #6f818f;
+//   color: #515f6a;
+//   text-shadow: 0 1px 0 #c4d0d9;
+//   -webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;
+//   -moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0;
+//   box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #ced8e0; }
+
+// .cbutton.darkblue:hover {
+//   background: #adbfcb;
+//   border-color: #8996a0 #798791 #6c7a85;
+//   text-shadow: 0 1px 0 #ced9e0;
+//   -webkit-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;
+//   -moz-box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8;
+//   box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8; }
+
+// .cbutton.black {
+//   background: #525252;
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e5e5e', endColorstr='#434343');
+//   /*  IE */
+//   background: -webkit-gradient(linear, left top, left bottom, from(#5e5e5e), to(#434343));
+//   /*  WebKit */
+//   background: -moz-linear-gradient(top, #5e5e5e, #434343);
+//   border-color: #4c4c4c #313131 #1f1f1f;
+//   color: #fff;
+//   text-shadow: 0 1px 0 #2e2e2e;
+//   -webkit-box-shadow: 0 1px 1px #afafaf, inset 0 1px 0 #868686;
+//   -moz-box-shadow: 0 1px 1px #afafaf, inset 0 1px 0 #868686;
+//   box-shadow: 0 1px 1px #afafaf, inset 0 1px 0 #868686; }
+
+// .cbutton.black:hover {
+//   background: #5a5a5a;
+//   border-color: #2c2c2c #1c1c1c #101010;
+//   text-shadow: 0 1px 0 #363636;
+//   -webkit-box-shadow: 0 1px 1px #b1b1b1, inset 0 1px 0 #838383;
+//   -moz-box-shadow: 0 1px 1px #b1b1b1, inset 0 1px 0 #838383;
+//   box-shadow: 0 1px 1px #b1b1b1, inset 0 1px 0 #838383; }
+
+
+
+
+// START 2016 buttons
+.cbb-btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  color: #ffffff !important;
+  font-size: 16px;
+  background: #272449;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  float:left;
+  transition: background-color 0.5s ease;
+}
+
+.cbb-btn:hover {
+  background: #4F536B;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+.cbb-btn a{
+  color:white !important;
+}
+// END 2016 buttons
+
+
+
+
+.kiswidgt {
+  padding: 10px 0px 10px 30px;
+}
+
+
+/* GLOBAL SEARCH BOX BUTTON .btn */
+
+.btn {
+  display: inline-block;
+  *display: inline;
+  padding: 1px 5px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  color: black;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: black;
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  background-color: black;
+  *background-color: black;
+}
+
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9;
+}
+
+.btn:first-child {
+  *margin-left: 0;
+}
+
+.btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+      -ms-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn.active,
+.btn:active {
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-large {
+  padding: 9px 14px;
+  font-size: 15px;
+  line-height: normal;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.btn-large [class^="icon-"] {
+  margin-top: 1px;
+}
+
+.btn-small {
+  padding: 5px 9px;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.btn-small [class^="icon-"] {
+  margin-top: -1px;
+}
+
+.btn-mini {
+  padding: 2px 6px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-warning,
+.btn-warning:hover,
+.btn-danger,
+.btn-danger:hover,
+.btn-success,
+.btn-success:hover,
+.btn-info,
+.btn-info:hover,
+.btn-inverse,
+.btn-inverse:hover {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn {
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary {
+  background-color: #0074cc;
+  *background-color: #0055cc;
+  background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
+  background-image: linear-gradient(top, #0088cc, #0055cc);
+  background-repeat: repeat-x;
+  border-color: #0055cc #0055cc #003580;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #0055cc;
+  *background-color: #004ab3;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #004099 \9;
+}
+
+.btn-warning {
+  background-color: #faa732;
+  *background-color: #f89406;
+  background-image: -ms-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(top, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89406', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605 \9;
+}
+
+.btn-danger {
+  background-color: #da4f49;
+  *background-color: #bd362f;
+  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(top, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#bd362f', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25 \9;
+}
+
+.btn-success {
+  background-color: #5bb75b;
+  *background-color: #51a351;
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+
+.btn-info {
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9;
+}
+
+.btn-inverse {
+  background-color: #414141;
+  *background-color: #222222;
+  background-image: -ms-linear-gradient(top, #555555, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
+  background-image: -webkit-linear-gradient(top, #555555, #222222);
+  background-image: -o-linear-gradient(top, #555555, #222222);
+  background-image: -moz-linear-gradient(top, #555555, #222222);
+  background-image: linear-gradient(top, #555555, #222222);
+  background-repeat: repeat-x;
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#555555', endColorstr='#222222', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  background-color: #222222;
+  *background-color: #151515;
+}
+
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808 \9;
+}
+
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+}
+
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+
+button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+.btn-group {
+  position: relative;
+  *margin-left: .3em;
+  *zoom: 1;
+}
+
+.btn-group:before,
+.btn-group:after {
+  display: table;
+  content: "";
+}
+
+.btn-group:after {
+  clear: both;
+}
+
+.btn-group:first-child {
+  *margin-left: 0;
+}
+
+.btn-group + .btn-group {
+  margin-left: 5px;
+}
+
+.btn-toolbar {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.btn-toolbar .btn-group {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+
+.btn-group > .btn {
+  position: relative;
+  float: left;
+  margin-left: -1px;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.btn-group > .btn:first-child {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.btn-group > .btn.large:first-child {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+          border-top-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-topleft: 6px;
+}
+
+.btn-group > .btn.large:last-child,
+.btn-group > .large.dropdown-toggle {
+  -webkit-border-top-right-radius: 6px;
+          border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+.btn-group > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group > .btn:active,
+.btn-group > .btn.active {
+  z-index: 2;
+}
+
+.btn-group .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle {
+  outline: 0;
+}
+
+.btn-group > .dropdown-toggle {
+  *padding-top: 4px;
+  padding-right: 8px;
+  *padding-bottom: 4px;
+  padding-left: 8px;
+  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-group > .btn-mini.dropdown-toggle {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.btn-group > .btn-small.dropdown-toggle {
+  *padding-top: 4px;
+  *padding-bottom: 4px;
+}
+
+.btn-group > .btn-large.dropdown-toggle {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.btn-group.open .dropdown-toggle {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-group.open .btn.dropdown-toggle {
+  background-color: #e6e6e6;
+}
+
+.btn-group.open .btn-primary.dropdown-toggle {
+  background-color: #0055cc;
+}
+
+.btn-group.open .btn-warning.dropdown-toggle {
+  background-color: #f89406;
+}
+
+.btn-group.open .btn-danger.dropdown-toggle {
+  background-color: #bd362f;
+}
+
+.btn-group.open .btn-success.dropdown-toggle {
+  background-color: #51a351;
+}
+
+.btn-group.open .btn-info.dropdown-toggle {
+  background-color: #2f96b4;
+}
+
+.btn-group.open .btn-inverse.dropdown-toggle {
+  background-color: #222222;
+}
+
+.btn .caret {
+  margin-top: 7px;
+  margin-left: 0;
+}
+
+.btn:hover .caret,
+.open.btn-group .caret {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.btn-mini .caret {
+  margin-top: 5px;
+}
+
+.btn-small .caret {
+  margin-top: 6px;
+}
+
+.btn-large .caret {
+  margin-top: 6px;
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 5px;
+}
+
+.dropup .btn-large .caret {
+  border-top: 0;
+  border-bottom: 5px solid #000000;
+}
+
+.btn-primary .caret,
+.btn-warning .caret,
+.btn-danger .caret,
+.btn-info .caret,
+.btn-success .caret,
+.btn-inverse .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
+
+
+
+
+/* Brave new feature boxes! */
+.featurebox_type2 {
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  transition: all .4s;
+
+  -webkit-border-radius: 10px;
+-webkit-border-top-left-radius: 0;
+-moz-border-radius: 10px;
+-moz-border-radius-topleft: 0;
+border-radius: 10px;
+border-top-left-radius: 0;
+
+
+
+}
+
+.featurebox_type2 img {
+-webkit-border-top-right-radius: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-topright: 20px;
+-moz-border-radius-bottomleft: 20px;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+
+
+.featurebox_type2:hover img {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity:1;
+
+}
+
+.featurebox_type2:hover {
+background: rgba(224, 224, 224, .2);
+}
+
+// .imgListing {
+//   -webkit-transition: all .4s;
+//   -moz-transition: all .4s;
+//   -o-transition: all .4s;
+//   -ms-transition: all .4s;
+//   transition: all .4s;
+
+//   -webkit-border-radius: 10px;
+// -webkit-border-top-left-radius: 0;
+// -moz-border-radius: 10px;
+// -moz-border-radius-topleft: 0;
+// border-radius: 10px;
+// border-top-left-radius: 0;
+
+
+// }
+
+// .imgListing img {
+// -webkit-border-top-right-radius: 20px;
+// -webkit-border-bottom-left-radius: 20px;
+// -moz-border-radius-topright: 20px;
+// -moz-border-radius-bottomleft: 20px;
+// border-top-right-radius: 20px;
+// border-bottom-left-radius: 20px;
+// }
+
+
+
+
+//   // CSS 3 .05% zoom
+//   .imgListing .curvedImage img {
+//   -webkit-transition: all .3s;
+//   -moz-transition: all .3s;
+//   -o-transition: all .3s;
+//   -ms-transition: all .3s;
+//   transition: all .3s;
+// }
+
+.imgListing:hover .curvedImage img {
+  // -webkit-transform: scale(1.02);
+  // -moz-transform: scale(1.02);
+  // -o-transform: scale(1.02);
+  // -ms-transform: scale(1.02);
+  // transform: scale(1.02);
+}
+//end zoom
+
+
+.imgListing:hover {
+background: rgba(224, 224, 224, .2);
+}
+
+/* end brave new feature boxes */
+
+
+.blockpanel {
+   padding-left:10px;
+}
+.pcde{
+padding: 20px !important;
+}
