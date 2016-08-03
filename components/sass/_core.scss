@@ -1659,6 +1659,10 @@ html body.tMidImage div#pageSurround div#content div#fadeCorner div#imgBlock.cle
 .fbexpOpen .fbexpMore {
     display:none;
 }
+// Tidy title
+#midCol .fbexp h3 {
+    padding: 0px;
+}
 
 
 #midCol .fbexp:hover{
