@@ -1655,6 +1655,12 @@ html body.tMidImage div#pageSurround div#content div#fadeCorner div#imgBlock.cle
   background-color: #f1f1f1;
 }
 
+// JS is toggling the fbexpOpen and so more will disappear when fb is clicked with the following rule
+.fbexpOpen .fbexpMore {
+    display:none;
+}
+
+
 #midCol .fbexp:hover{
     background-color:#e0e0e0 !important;   
 }
