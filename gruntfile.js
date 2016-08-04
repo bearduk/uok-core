@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+  'use strict';
+
 	// node require
 	require('time-grunt')(grunt);
 
