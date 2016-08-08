@@ -62,7 +62,11 @@
 			// }
 			
 	}
-
+	
+	// Small edit to footer
+	.kfoot a {
+      transition: color 0.5s ease;
+	}
 	.kfoot a:hover {
   		color:#2BB675 !important;
 	}  /* Adding in to secure the green rollover. Could probably be nested under kfoot tbh though */
