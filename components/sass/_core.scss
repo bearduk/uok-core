@@ -147,12 +147,12 @@ ul.subNav .currentHead0 ul li a:hover[href$=".pdf"]{
 
 /* protected intranets */
 ul.subNav a[href*="/intranet"], ul.subNav a[href*="/sif"]{
-  background: url("http://www.keele.ac.uk/jq/images/Locked-3.png") no-repeat scroll right center transparent;
+  background: url("/jq/images/Locked-3.png") no-repeat scroll right center transparent;
   padding-right: 20px; }
 
 ul.subNav a:hover[href*="/intranet"], ul.subNav a:hover[href*="/sif"]{
     padding-right: 20px;
-  background: url("http://www.keele.ac.uk/jq/images/Locked-3.png") no-repeat scroll right center #eeeeee; }
+  background: url("/jq/images/Locked-3.png") no-repeat scroll right center #eeeeee; }
 
 /*end LHS icons*/
 /* Ink Black highlight CB */
@@ -170,7 +170,7 @@ ul.subNav a:hover[href*="/intranet"], ul.subNav a:hover[href*="/sif"]{
 
 
 blockquote {
-    background: url(http://www.keele.ac.uk/jq/quote/bg-quote2.png) no-repeat #efefef !important;     
+    background: url(/jq/quote/bg-quote2.png) no-repeat #efefef !important;     
     border-left: 1px dashed #ccc !important;
     margin: 30px !important;
     padding: 30px 30px 30px 50px !important;     
