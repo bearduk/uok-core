@@ -52,5 +52,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['compass', 'postcss']);
 
   // for the future-- consider uncss (checks unused css against specified html files)
+  // also consider breakup for easy maintenance of media queries in component partials
+  // https://github.com/BPScott/breakup
 
 }; // wrapper function
