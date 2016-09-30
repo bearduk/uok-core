@@ -50,5 +50,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-postcss');
 	
 	grunt.registerTask('default', ['compass', 'postcss']);
-	
+
+  // for the future-- consider uncss (checks unused css against specified html files)
+
 }; // wrapper function
