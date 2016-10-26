@@ -985,6 +985,14 @@ ul.topNav > li > a {
   line-height: 14px;
 }
 
+// progressive Flexbox for main menu
+ul.topNav {
+    display: flex;
+    justify-content: space-between;
+}
+// if needed, push items to far right, add an inline 'style="margin-left:auto;" '
+
+
 body:first-of-type ul.topNav > li > a {
   padding: 14px 14px 0em 12px; }
 
