@@ -11,13 +11,15 @@ module.exports = function(grunt) {
 
       // grunt-contrib-compass		
     	compass: {                  	// Task
-    		dev: {                   	// Target
-				options: {              // Target options
-			    	sassDir: 'components/sass',
-			    	cssDir: 'builds/development/css',
-			    	environment: 'development'
-      			}
-    		}, // close dist
+
+//    		dev: {                   	// Target
+//				options: {              // Target options
+//			    	sassDir: 'components/sass',
+//			    	cssDir: 'builds/development/css',
+//			    	environment: 'development'
+//      			}
+//    		}, // close dist
+
     		prod: {                    // Another target
       			options: {
         			sassDir: 'components/sass',
