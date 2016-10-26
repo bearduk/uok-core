@@ -42,14 +42,27 @@ module.exports = function(grunt) {
   			dist: {
   				src:'builds/production/css/*.css'
   			}  // postcss options		    
-    	}	// postcss
+    	},	// postcss
+
+
+      watch: {
+        scripts: {
+        files: ['components/sass/**'],
+        tasks: ['compass', 'postcss'],
+        options: {
+          spawn: false
+          }
+        }
+      }       // end watch
+
 
 	}); //initConfig
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-postcss');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	
-	grunt.registerTask('default', ['compass', 'postcss']);
+  grunt.registerTask('default', ['compass', 'postcss', 'watch']);
 
   // for the future-- consider uncss (checks unused css against specified html files)
   // also consider breakup for easy maintenance of media queries in component partials
