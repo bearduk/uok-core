@@ -291,14 +291,8 @@ width:200px;
 
 .land_hero img {
     max-width: 180px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all .5s ease-in;
-    -moz-transition: all .5s ease-in;
-    -ms-transition: all .5s ease-in;
-    -o-transition: all 1.5s ease-in;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 /* fix line height */
 
