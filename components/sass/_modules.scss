@@ -332,14 +332,17 @@ width:200px;
     transition: box-shadow .3s;
     padding: 10px;
     margin: 1%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 5px solid white;
-    -webkit-box-shadow: 0 0 1px 0 #00293d;
-    box-shadow: 0 0 1px 0 #00293d;
+    // -webkit-box-shadow: 0 0 1px 0 #00293d;
+    // box-shadow: 0 0 1px 0 #00293d;
     vertical-align: top;
     width: 210px;
+    // new shadow
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .land_hero h3 {
@@ -349,13 +352,11 @@ width:200px;
 }
 
 .land_hero:hover {
-    -webkit-box-shadow: 0 0 6px 0 #00293d;
-    box-shadow: 0 0 6px 0 #00293d;
-    /*        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);*/
+    // -webkit-box-shadow: 0 0 6px 0 #00293d;
+    // box-shadow: 0 0 6px 0 #00293d;
+
+        // new shadow
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
 }
 
 .land_hero a {
