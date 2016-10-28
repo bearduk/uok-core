@@ -986,10 +986,24 @@ ul.topNav > li > a {
 }
 
 // progressive Flexbox for main menu
+.flexbox { // for modernizr
 ul.topNav {
     display: flex;
     justify-content: space-between;
 }
+ul.topNav li {
+    display:flex;
+    justify-content:center;
+    flex: 1 0 auto;
+}
+ul.topNav li a {
+    width: 100%;
+}
+body:first-of-type ul.topNav>li>a {
+    text-align:center;
+}
+} // end .flexbox
+
 // NOTE THAT this breaks the drop downs for Study at Keele lining up. So use modernizr to target flexbox enabled browsers and then alter the left: on hover
 
 
