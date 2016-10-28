@@ -284,6 +284,7 @@ html{
 			ul a {
 				@include fontsize(1.75, 2.45);
 				color:white;
+				transition: color .3s ease;
 			}
 			input {
 				color:black;
