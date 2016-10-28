@@ -1002,6 +1002,9 @@ ul.topNav li a {
 body:first-of-type ul.topNav>li>a {
     text-align:center;
 }
+.topNav li.first, .topNav li.last { // note, only within .flexbox
+  display: none;
+}
 } // end .flexbox
 
 // NOTE THAT this breaks the drop downs for Study at Keele lining up. So use modernizr to target flexbox enabled browsers and then alter the left: on hover
