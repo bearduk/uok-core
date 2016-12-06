@@ -1,0 +1,7 @@
+// trial for fixing same page anchor links. 6.12.2016
+.breakpoint-1024 #midCol :target:before {
+    content: "";
+    display: inline-block;
+    height: 75px;
+    margin: -75px 0 0;
+}
