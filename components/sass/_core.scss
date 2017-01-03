@@ -149,14 +149,24 @@ ul.subNav .currentHead0 ul li a:hover[href$=".pdf"]{
   padding-left:30px;
   background: url(/media/keeleuniversity/styleassets/images/icon_pdf.gif) no-repeat center right; }
 
+
 /* protected intranets */
 ul.subNav a[href*="/intranet"], ul.subNav a[href*="/sif"]{
   background: url("/jq/images/Locked-3.png") no-repeat scroll right center transparent;
-  padding-right: 20px; }
-
+  padding-right: 20px;
+  }
 ul.subNav a:hover[href*="/intranet"], ul.subNav a:hover[href*="/sif"]{
-    padding-right: 20px;
+  padding-right: 20px;
   background: url("/jq/images/Locked-3.png") no-repeat scroll right center #eeeeee; }
+
+/* kill off sub menu intranet logos */
+ul.subNav ul li a[href*="/intranet"], ul.subNav ul li a[href*="/sif"]{
+  background: url(/media/keeleuniversity/styleassets/images/bulletSubnav2.gif) no-repeat scroll right center transparent;
+  margin-right: 20px !important;
+  }
+ul.subNav ul li a:hover[href*="/intranet"], ul.subNav ul li a:hover[href*="/sif"]{
+  padding-right: 20px;
+  background: url(/media/keeleuniversity/styleassets/images/bulletSubnav2.gif) no-repeat scroll right center #eeeeee; }
 
 /*end LHS icons*/
 /* Ink Black highlight CB */
