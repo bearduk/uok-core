@@ -3536,7 +3536,7 @@ form #courseGo input:hover {
 
 
 // START 2016 buttons
-.cbb-btn {
+.cbb-btn a {
   -webkit-border-radius: 3;
   -moz-border-radius: 3;
   border-radius: 3px;
@@ -3554,7 +3554,7 @@ form #courseGo input:hover {
   // transition: background-color 0.8s ease; OLD
 }
 
-.cbb-btn:hover {
+.cbb-btn a:hover {
   background: #233648;
   text-decoration: none;
   cursor: pointer;
@@ -3564,10 +3564,6 @@ form #courseGo input:hover {
 .cbb-btn a{
   color:white !important;
 }
-
-
-
-
 // END 2016 buttons
 
 
