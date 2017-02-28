@@ -86,7 +86,8 @@
     float:left;
 	}
 	.kfbmeg {
-    margin-top:32px; // give some breathing room above this h2 as it's the second row in a column
+    margin-top:18px; // give some breathing room above this h2 as it's the second row in a column
+    line-height: 18px;
 	}
 	.footul {
 		margin-top: 15px;
@@ -99,6 +100,15 @@
 			    padding:5px 0px 7px 0px !important;
 			}
 	}
+
+
+// box-sizing and padding for footer columns, except column 4 so that it has room for the graphics
+	#footer-col1, #footer-col2, #footer-col3 {
+    	padding-right: 15px;
+    	box-sizing:border-box;
+	}
+
+
 
 ////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
