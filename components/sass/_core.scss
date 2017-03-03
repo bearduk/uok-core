@@ -229,10 +229,15 @@ h3 strong {
   padding-bottom: 7px;
   padding-top: 7px;
   vertical-align: top;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  // margin-right: 5px;
+  // margin-bottom: 5px;
   // height: 100px;
-  width: 330px !important; }
+  // width: 330px !important; 
+    width: 305px!important;
+    margin: 10px !important;
+    min-height: 100px;
+
+}
 
 .stindx div img {
   padding-left: 5px; }
