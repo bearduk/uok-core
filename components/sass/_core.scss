@@ -782,7 +782,8 @@ body {
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   #header {
-    padding: 32px 24px 5px 24px;
+    // commenting out for new APRIL 2017 LOGO
+    // padding: 32px 24px 5px 24px;
      } }
 .homeLink {
   display: block;
@@ -4260,3 +4261,32 @@ background: rgba(224, 224, 224, .2);
 .pcde{
 padding: 20px !important;
 }
+
+
+
+
+
+/* NEW LOGO APRIL 2017 */
+// overriding earlier rules for now until we're sure we're ok to go with this
+
+#header {
+  padding: 24px 24px 5px 0 !important;
+}
+
+.homeLink {
+  height: 100px;
+}
+
+#search {
+  margin: 10px 0 0;
+  width: initial;
+}
+
+ul.siteTools {
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-left: 220px;
+}
+
+/* END NEW LOGO APRIL 2017 */
