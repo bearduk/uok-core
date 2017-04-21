@@ -4270,11 +4270,15 @@ padding: 20px !important;
 // overriding earlier rules for now until we're sure we're ok to go with this
 
 #header {
-  padding: 24px 24px 5px 0 !important;
+  padding: 27px 24px 5px 0 !important;
 }
 
 .homeLink {
-  height: 100px;
+  height: 102px;
+}
+
+.homeLink img {
+    padding-left: 29px;
 }
 
 #search {
