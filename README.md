@@ -9,4 +9,4 @@ This repo is a rebase of the old CodeKit setup.
 ## What you'll need
 You will need to have NodeJS (including NPM), Git, Ruby (including RubyGems) and Compass installed on your machine.
 
-Gem bundler from <http://bundler.io/>
+Gem bundler from <http://bundler.io/>. For fresh machines, run `gem install bundler` and then `bundle install` to get sass, compass etc installed.

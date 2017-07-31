@@ -505,10 +505,10 @@ blockquote, q {
   border: 2px solid #73A6FF !important; }
 
 /* Fix for users that have p tags within li tags */
-#midCol > ul > li > p, #midCol > ul > li > p > a {
-  font-size: 12px !important;
-  line-height: 1em !important;
-  padding: 0.2em 0 !important; }
+// #midCol > ul > li > p, #midCol > ul > li > p > a {
+//   font-size: 12px !important;
+//   line-height: 1em !important;
+//   padding: 0.2em 0 !important; }
 
 /* end fix cb 8th June 2010 */
 #midCol table#dtable, #midCol table#dtable p, #midCol table#dtable strong {
